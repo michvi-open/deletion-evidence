@@ -1,0 +1,20 @@
+{
+  "record_id": "ver-00111",
+  "record_type": "VER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-23T08:30:08Z",
+  "linked_record_id": "der-00111",
+  "linked_record_hash": "e9b922ac6baadfe4db0935ba38fe99d544a6eab74aac8c8477b7f8a348f773e5",
+  "verification_type": "audit_spot_check",
+  "verification_status": "SUBPROCESSOR_PENDING",
+  "subprocessor_update": "Subprocessor deletion confirmation still outstanding at time of review (synthetic).",
+  "evidence_metadata": {
+    "recorded_by_reference": "reviewer-ref-13c251d",
+    "recorded_at": "2026-08-22T13:39:25Z",
+    "evidence_references": [
+      "review-000111"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "5b86d15606e11f385fc3f7e0a337bd1b98388349a8586f4071023d40c68c7d6b"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00118",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T03:04:28Z",
+  "request_context": {
+    "request_id": "req-00118",
+    "request_type": "RETENTION_EXPIRY",
+    "requested_at": "2026-06-16T08:19:05Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-1655b96"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-19fbd2d",
+    "scope_description": "Backup retention scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "backup-system-offsite-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "backup-system-offsite-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "backup-system-offsite-02",
+    "responsible_party_reference": "party-ref-178d173",
+    "recorded_at": "2026-08-25T03:04:28Z",
+    "evidence_references": [
+      "ticket-000118"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "8d7de6a51cba2de8858f6ef132bee564c987cfe1cee7822c551a48b9e837619c"
+  }
+}

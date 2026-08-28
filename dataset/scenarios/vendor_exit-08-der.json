@@ -1,0 +1,56 @@
+{
+  "record_id": "der-00312",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T00:42:01Z",
+  "request_context": {
+    "request_id": "req-00312",
+    "request_type": "VENDOR_EXIT",
+    "requested_at": "2026-07-08T20:39:50Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-50116b8"
+  },
+  "data_scope": {
+    "data_category": "crm_contact_record",
+    "subject_ref": "subject-ref-30a571b",
+    "scope_description": "Vendor exit scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01",
+      "saas-app-support-01",
+      "cloud-storage-eu-02"
+    ],
+    "processors_in_scope": [
+      "subprocessor-support-tooling-01",
+      "subprocessor-payments-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-12T20:38:08Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-billing-01"
+    ],
+    "systems_pending": [
+      "saas-app-support-01",
+      "cloud-storage-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-6040d9",
+    "recorded_at": "2026-08-26T00:42:01Z",
+    "evidence_references": [
+      "ticket-000312"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f0fa21b74909559f549231cbc19765c093ddd1b153afebb111985784d46a924b"
+  }
+}

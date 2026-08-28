@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00116",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T12:22:55Z",
+  "request_context": {
+    "request_id": "req-00116",
+    "request_type": "RETENTION_EXPIRY",
+    "requested_at": "2026-07-18T14:44:02Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-ddfd34"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-3e2097f",
+    "scope_description": "Backup retention scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "backup-system-offsite-02",
+      "backup-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-10T23:49:50Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "backup-system-offsite-02"
+    ],
+    "systems_pending": [
+      "backup-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "backup-system-offsite-02",
+    "responsible_party_reference": "party-ref-5d8974d",
+    "recorded_at": "2026-08-25T12:22:55Z",
+    "evidence_references": [
+      "ticket-000116"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "2355589fe76bca1ed93d8ac61227299236b30efe8589dec4d3fb24cd4717dd72"
+  }
+}

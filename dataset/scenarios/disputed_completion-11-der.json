@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00267",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T11:37:37Z",
+  "request_context": {
+    "request_id": "req-00267",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-02T19:50:39Z",
+    "requesting_role": "data_subject",
+    "requesting_organization_ref": "org-ref-20c1c9b"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-392350",
+    "scope_description": "Disputed completion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-11T12:22:23Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-01",
+    "responsible_party_reference": "party-ref-36d1482",
+    "recorded_at": "2026-08-25T11:37:37Z",
+    "evidence_references": [
+      "ticket-000267"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "b41eb386e835b812b9c89286cc7997ebdac8981ef7ff3b8c7ff6aa3724c50da0"
+  }
+}

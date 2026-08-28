@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00204",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T09:07:13Z",
+  "request_context": {
+    "request_id": "req-00204",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-15T21:52:52Z",
+    "requesting_role": "data_subject",
+    "requesting_organization_ref": "org-ref-4ab20c"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-5d0dc67",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-01",
+      "saas-app-billing-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-20T17:54:26Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-01"
+    ],
+    "systems_pending": [
+      "saas-app-billing-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-01",
+    "responsible_party_reference": "party-ref-41eb5d5",
+    "recorded_at": "2026-08-26T09:07:13Z",
+    "evidence_references": [
+      "ticket-000204"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f8c0d26a544bf5f1916980d34398f7b48b7b66e088548500810f58b88f872feb"
+  }
+}

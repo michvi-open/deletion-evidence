@@ -1,0 +1,20 @@
+{
+  "record_id": "ver-00282",
+  "record_type": "VER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-22T11:54:39Z",
+  "linked_record_id": "der-00282",
+  "linked_record_hash": "f5d28314ce0c09ecd28f4ef70ee0c367c0fcf41eaf2380719e93f6d29138e1f5",
+  "verification_type": "periodic_review",
+  "verification_status": "CORRECTED",
+  "review_note": "Original DER execution_status corrected following follow-up review (synthetic).",
+  "evidence_metadata": {
+    "recorded_by_reference": "reviewer-ref-3c5cc44",
+    "recorded_at": "2026-08-23T09:12:15Z",
+    "evidence_references": [
+      "review-000282"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "647c24b33ce4daa80b6aa419f82c78b35afa70eb45b183eeb27d024763f57092"
+  }
+}

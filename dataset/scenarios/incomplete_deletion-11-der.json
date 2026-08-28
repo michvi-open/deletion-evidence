@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00203",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T10:20:29Z",
+  "request_context": {
+    "request_id": "req-00203",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-27T10:01:24Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-301f35b"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-fc2190",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-warehouse-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-18T17:23:17Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "analytics-warehouse-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-warehouse-01",
+    "responsible_party_reference": "party-ref-58b7c2",
+    "recorded_at": "2026-08-25T10:20:29Z",
+    "evidence_references": [
+      "ticket-000203"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "d0850039c8a12fe012f9c41e13e4e3026d01dfaedffe4ef706102072e6a5fdd0"
+  }
+}

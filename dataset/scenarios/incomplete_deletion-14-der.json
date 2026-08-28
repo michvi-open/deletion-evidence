@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00206",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T17:00:35Z",
+  "request_context": {
+    "request_id": "req-00206",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-07-15T02:27:38Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-d2106e"
+  },
+  "data_scope": {
+    "data_category": "billing_record",
+    "subject_ref": "subject-ref-38e9015",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-platform-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-18T09:22:57Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "analytics-platform-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-platform-01",
+    "responsible_party_reference": "party-ref-5b4d0fb",
+    "recorded_at": "2026-08-25T17:00:35Z",
+    "evidence_references": [
+      "ticket-000206"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "1453cd83c4b29110b27e4e4948440fb6078ce15cc5c350282a0ce3cf1af87677"
+  }
+}

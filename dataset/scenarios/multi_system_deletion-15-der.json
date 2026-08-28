@@ -1,0 +1,49 @@
+{
+  "record_id": "der-00303",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T00:27:27Z",
+  "request_context": {
+    "request_id": "req-00303",
+    "request_type": "CUSTOMER_OFFBOARDING",
+    "requested_at": "2026-07-18T06:22:43Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-59ade7f"
+  },
+  "data_scope": {
+    "data_category": "billing_record",
+    "subject_ref": "subject-ref-148ec8c",
+    "scope_description": "Multi-system deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02"
+    ],
+    "processors_in_scope": [
+      "subprocessor-support-tooling-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-22d982e",
+    "recorded_at": "2026-08-25T00:27:27Z",
+    "evidence_references": [
+      "ticket-000303"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "9d9bf61fbbc7e8a9894f78256c7bb4d969ee5ff660736e8dac28486b6b871ed4"
+  }
+}

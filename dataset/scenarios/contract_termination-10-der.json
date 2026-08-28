@@ -1,0 +1,49 @@
+{
+  "record_id": "der-00170",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T18:52:50Z",
+  "request_context": {
+    "request_id": "req-00170",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-06-02T20:18:11Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-3392f8a"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-27ec6d9",
+    "scope_description": "Contract termination scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-analytics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "saas-app-billing-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-fe6c4f",
+    "recorded_at": "2026-08-25T18:52:50Z",
+    "evidence_references": [
+      "ticket-000170"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "515190c451da222797eb78890c64ae359be266efaa4ed2ea26abfdad9a290897"
+  }
+}

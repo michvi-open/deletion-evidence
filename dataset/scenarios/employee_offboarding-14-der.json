@@ -1,0 +1,46 @@
+{
+  "record_id": "der-00030",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T08:07:31Z",
+  "request_context": {
+    "request_id": "req-00030",
+    "request_type": "EMPLOYEE_OFFBOARDING",
+    "requested_at": "2026-08-05T01:37:05Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-1f8a6be"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-5a6cb45",
+    "scope_description": "Employee offboarding scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "identity-provider-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "identity-provider-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "identity-provider-01",
+    "responsible_party_reference": "party-ref-332b2eb",
+    "recorded_at": "2026-08-26T08:07:31Z",
+    "evidence_references": [
+      "ticket-000030"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f987e0db34d1c9a551f0faec1aca430ec291df795c31027af96a2dc9e49ecedc"
+  }
+}

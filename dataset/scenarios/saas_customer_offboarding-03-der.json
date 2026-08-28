@@ -1,0 +1,52 @@
+{
+  "record_id": "der-00003",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T01:36:56Z",
+  "request_context": {
+    "request_id": "req-00003",
+    "request_type": "CUSTOMER_OFFBOARDING",
+    "requested_at": "2026-07-20T00:52:10Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-3c5fe13"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-628b98",
+    "scope_description": "SaaS customer offboarding scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01",
+      "saas-app-core-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-support-tooling-01",
+      "subprocessor-email-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "saas-app-billing-01",
+      "saas-app-core-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-2a4d7ea",
+    "recorded_at": "2026-08-25T01:36:56Z",
+    "evidence_references": [
+      "ticket-000003"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "6133b3e6a82549b635bbd86edfcfa393182724b207733f4cfb6a6b63aa0335a5"
+  }
+}

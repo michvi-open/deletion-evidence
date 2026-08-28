@@ -1,0 +1,54 @@
+{
+  "record_id": "der-00174",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T09:13:44Z",
+  "request_context": {
+    "request_id": "req-00174",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-07-13T15:40:42Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-447ec4e"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-3f00f35",
+    "scope_description": "Contract termination scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-core-01",
+      "saas-app-support-01",
+      "saas-app-billing-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-analytics-01",
+      "subprocessor-email-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-18T13:32:06Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-core-01",
+      "saas-app-support-01",
+      "saas-app-billing-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-core-01",
+    "responsible_party_reference": "party-ref-42aa29b",
+    "recorded_at": "2026-08-26T09:13:44Z",
+    "evidence_references": [
+      "ticket-000174"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "82609df8ca37a290b1a5851880e6e2827a10da7037b387c552efde20c8e6d7e1"
+  }
+}

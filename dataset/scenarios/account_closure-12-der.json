@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00156",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T03:24:50Z",
+  "request_context": {
+    "request_id": "req-00156",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-08-04T14:32:42Z",
+    "requesting_role": "data_subject",
+    "requesting_organization_ref": "org-ref-57b7bdc"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-6d3a17",
+    "scope_description": "Account closure scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01",
+      "crm-system-01",
+      "saas-app-core-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-19T02:41:42Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-billing-01"
+    ],
+    "systems_pending": [
+      "crm-system-01",
+      "saas-app-core-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-1cf7045",
+    "recorded_at": "2026-08-25T03:24:50Z",
+    "evidence_references": [
+      "ticket-000156"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "92ba7ff400231db6a93eb5af9b82b73ddd2ef59184bdd8b30fb70c7d13aa4701"
+  }
+}

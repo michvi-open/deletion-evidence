@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00129",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T09:53:58Z",
+  "request_context": {
+    "request_id": "req-00129",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-06-28T17:01:24Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-152f231"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-11edb6a",
+    "scope_description": "Legal hold scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-core-01",
+      "saas-app-support-01",
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "LEGAL_HOLD",
+    "executed_at": "2026-08-23T20:58:48Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-core-01"
+    ],
+    "systems_pending": [
+      "saas-app-support-01",
+      "crm-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-core-01",
+    "responsible_party_reference": "party-ref-1419544",
+    "recorded_at": "2026-08-25T09:53:58Z",
+    "evidence_references": [
+      "ticket-000129"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "dc3731ccf22c7d0fd9c103429a969c4d1de68a0277ae08f20f83b52d724f3db5"
+  }
+}

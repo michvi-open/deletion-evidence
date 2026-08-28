@@ -1,0 +1,21 @@
+{
+  "record_id": "ver-00229",
+  "record_type": "VER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-24T15:36:40Z",
+  "linked_record_id": "der-00229",
+  "linked_record_hash": "93d90da658ddb9a59eb3d374de0674f4a42f6a3910babb9d0fe618559d730c9b",
+  "verification_type": "internal_QA_review",
+  "verification_status": "EXCEPTION_IDENTIFIED",
+  "residual_state_update": "Residual copy identified during follow-up review (synthetic).",
+  "exception_reason": "Residual/exception condition identified during verification (synthetic).",
+  "evidence_metadata": {
+    "recorded_by_reference": "reviewer-ref-2410e0b",
+    "recorded_at": "2026-08-26T07:58:58Z",
+    "evidence_references": [
+      "review-000229"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f8f31128d9b88ad58fa23f817ada8dd539a0835ae71f000f2ba377cda056abae"
+  }
+}

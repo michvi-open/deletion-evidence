@@ -1,0 +1,46 @@
+{
+  "record_id": "der-00180",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T10:21:34Z",
+  "request_context": {
+    "request_id": "req-00180",
+    "request_type": "SYSTEM_MIGRATION",
+    "requested_at": "2026-07-31T14:06:20Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-5de0774"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-31f0b3f",
+    "scope_description": "Data migration scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "migration-target-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "migration-target-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "migration-target-system-01",
+    "responsible_party_reference": "party-ref-2f7130d",
+    "recorded_at": "2026-08-25T10:21:34Z",
+    "evidence_references": [
+      "ticket-000180"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "e23a29f25f743843e978a7452b116d20217872e225e1b9d75836902efb236d02"
+  }
+}

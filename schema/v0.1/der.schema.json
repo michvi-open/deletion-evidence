@@ -1,0 +1,200 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/der.schema.json",
+  "title": "Deletion Evidence Record (DER)",
+  "description": "Captures a deletion/data-exit action and its execution state. This record documents an asserted/executed deletion action. It is NOT independent proof that every physical copy of the underlying data was destroyed. See /spec/deletion-evidence-record.md for the normative specification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "timestamp",
+    "request_context",
+    "data_scope",
+    "execution",
+    "residual_state",
+    "evidence_metadata"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "description": "Globally unique identifier for this record. RFC 4122 UUID recommended.",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "record_type": {
+      "const": "DER",
+      "description": "Fixed discriminator identifying this as a Deletion Evidence Record."
+    },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "RFC 3339 timestamp marking when this record object was created."
+    },
+    "request_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["request_id", "request_type", "requested_at"],
+      "properties": {
+        "request_id": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 128,
+          "description": "Identifier of the originating deletion/data-exit request. Reference only — not a personal identifier."
+        },
+        "request_type": {
+          "$ref": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/vocab.schema.json#/$defs/request_type"
+        },
+        "requested_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the deletion/data-exit request was made."
+        },
+        "requesting_role": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Functional role that initiated the request (e.g. 'data_subject', 'customer_admin', 'procurement', 'hr'). Not a personal name."
+        },
+        "requesting_organization_ref": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Opaque reference to the requesting organization, where applicable. Must not contain personal data."
+        }
+      }
+    },
+    "data_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["data_category", "scope_description", "systems_in_scope"],
+      "properties": {
+        "data_category": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "General category of data in scope (e.g. 'customer_account_data', 'employee_hr_record', 'crm_contact_record'). Not a value taxonomy — free text by design."
+        },
+        "subject_ref": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Opaque/pseudonymous reference to the subject, account, or resource. MUST NOT be a real personal identifier (name, email, national ID)."
+        },
+        "scope_description": {
+          "type": "string",
+          "maxLength": 1000,
+          "description": "Human-readable description of what the deletion/data-exit action covers."
+        },
+        "systems_in_scope": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "minItems": 1,
+          "uniqueItems": true,
+          "description": "Opaque identifiers or names of systems in scope for this action."
+        },
+        "processors_in_scope": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "uniqueItems": true,
+          "description": "Opaque identifiers or names of third-party processors/subprocessors in scope, if any."
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["execution_status", "systems_completed", "systems_pending"],
+      "properties": {
+        "execution_status": {
+          "$ref": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/vocab.schema.json#/$defs/execution_status"
+        },
+        "executed_at": {
+          "type": ["string", "null"],
+          "format": "date-time",
+          "description": "When execution completed or was last attempted. Null if not yet executed."
+        },
+        "execution_method_declaration": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Declarative, non-technical statement of how execution was asserted to occur (e.g. 'account and associated records marked for deletion via standard offboarding workflow'). This field records an assertion, not verifiable technical proof."
+        },
+        "systems_completed": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "uniqueItems": true
+        },
+        "systems_pending": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 128 },
+          "uniqueItems": true
+        }
+      }
+    },
+    "residual_state": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["residual_copies_declared", "legal_hold"],
+      "properties": {
+        "backup_state": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Declarative statement of backup status relevant to this action (e.g. 'included in standard 30-day backup rotation')."
+        },
+        "residual_copies_declared": {
+          "type": "boolean",
+          "description": "Whether any residual copies are declared to exist at the time of this record."
+        },
+        "retention_exception": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Description of any retention exception applying to this data (e.g. statutory retention period)."
+        },
+        "legal_hold": {
+          "type": "boolean",
+          "description": "Whether a legal hold applies to any part of the scoped data."
+        },
+        "subprocessor_status": {
+          "type": "string",
+          "maxLength": 500,
+          "description": "Declarative status of subprocessor completion, if processors_in_scope is non-empty."
+        }
+      }
+    },
+    "evidence_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source_system_id", "recorded_at", "canonicalization_method", "record_hash"],
+      "properties": {
+        "source_system_id": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Opaque identifier of the system that generated this record."
+        },
+        "responsible_party_reference": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Opaque reference to the party responsible for executing/recording this action. Not a personal name."
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence_references": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 256 },
+          "description": "Opaque references (e.g. ticket IDs, log IDs) supporting this record. Must not embed personal data or secrets."
+        },
+        "canonicalization_method": {
+          "const": "der-ver-canonical-json-v0.1",
+          "description": "Identifies the canonicalization algorithm used to compute record_hash. See /spec/hashing.md."
+        },
+        "record_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 hash (lowercase hex) of the canonicalized record with this field itself excluded. Verifies integrity of the evidence record only — it does NOT independently prove physical deletion occurred in external systems."
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "record_id": "der-00095",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T03:23:34Z",
+  "request_context": {
+    "request_id": "req-00095",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-12T00:01:10Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-4416faf"
+  },
+  "data_scope": {
+    "data_category": "vendor_contract_record",
+    "subject_ref": "subject-ref-3c2a6dc",
+    "scope_description": "Marketing platform deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-01",
+      "marketing-platform-email-02"
+    ],
+    "processors_in_scope": [
+      "subprocessor-email-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-24T18:07:15Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-01"
+    ],
+    "systems_pending": [
+      "marketing-platform-email-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-01",
+    "responsible_party_reference": "party-ref-4172cbe",
+    "recorded_at": "2026-08-25T03:23:34Z",
+    "evidence_references": [
+      "ticket-000095"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "dae6a512d3f965e021d878c824f1a618b3ee860761f1697a4585e3522dccc7bd"
+  }
+}

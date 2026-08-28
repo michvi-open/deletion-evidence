@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00205",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T14:24:32Z",
+  "request_context": {
+    "request_id": "req-00205",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-05-29T21:34:17Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-38951bd"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-4afb63e",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-platform-01",
+      "crm-system-01",
+      "saas-app-support-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-15T17:13:48Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "analytics-platform-01"
+    ],
+    "systems_pending": [
+      "crm-system-01",
+      "saas-app-support-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-platform-01",
+    "responsible_party_reference": "party-ref-1eed2e8",
+    "recorded_at": "2026-08-26T14:24:32Z",
+    "evidence_references": [
+      "ticket-000205"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "18a41afc283931e0d5c08d3f3ce47dc00dc74cc0d85c4df0745e60443d701bf0"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00272",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T21:57:09Z",
+  "request_context": {
+    "request_id": "req-00272",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-16T17:56:32Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-639810"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-894583",
+    "scope_description": "Disputed completion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-01",
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-08T14:42:43Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-01"
+    ],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-01",
+    "responsible_party_reference": "party-ref-46967e1",
+    "recorded_at": "2026-08-26T21:57:09Z",
+    "evidence_references": [
+      "ticket-000272"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "1b70b1b1e056a7e9cfc10ab09693207c26837964a6aa6852817d5e2a4cbaff98"
+  }
+}

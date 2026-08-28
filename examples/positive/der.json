@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00289",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T14:52:58Z",
+  "request_context": {
+    "request_id": "req-00289",
+    "request_type": "CUSTOMER_OFFBOARDING",
+    "requested_at": "2026-07-30T09:03:59Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-1e749d1"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-52d40ca",
+    "scope_description": "Multi-system deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-email-02"
+    ],
+    "processors_in_scope": [
+      "subprocessor-support-tooling-01",
+      "subprocessor-logistics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-18T23:47:47Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-email-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-email-02",
+    "responsible_party_reference": "party-ref-2fe9c24",
+    "recorded_at": "2026-08-25T14:52:58Z",
+    "evidence_references": [
+      "ticket-000289"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "3f7cc76ebf5bcde73fe735955552759b12c9546a35e7029611f24a7cf7c44436"
+  }
+}

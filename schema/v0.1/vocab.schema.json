@@ -1,0 +1,51 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/vocab.schema.json",
+  "title": "Deletion Evidence Record — Closed Vocabularies v0.1",
+  "description": "Shared enumerations used by der.schema.json and ver.schema.json. These are closed vocabularies, not a scoring or maturity system — no numeric weight or ranking is implied by list order.",
+  "$defs": {
+    "request_type": {
+      "type": "string",
+      "enum": [
+        "DATA_SUBJECT_REQUEST",
+        "CUSTOMER_OFFBOARDING",
+        "EMPLOYEE_OFFBOARDING",
+        "VENDOR_EXIT",
+        "RETENTION_EXPIRY",
+        "ACCOUNT_CLOSURE",
+        "CONTRACT_TERMINATION",
+        "SYSTEM_MIGRATION",
+        "ADMINISTRATIVE_DELETION",
+        "OTHER"
+      ],
+      "description": "The category of event that triggered the deletion/data-exit action."
+    },
+    "execution_status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "PARTIAL",
+        "PENDING",
+        "PENDING_SUBPROCESSOR",
+        "EXCEPTION",
+        "LEGAL_HOLD",
+        "UNVERIFIED",
+        "FAILED"
+      ],
+      "description": "Declared execution state of the deletion/data-exit action at the time this DER was recorded."
+    },
+    "verification_status": {
+      "type": "string",
+      "enum": [
+        "CONFIRMED",
+        "PARTIALLY_CONFIRMED",
+        "EXCEPTION_IDENTIFIED",
+        "RESIDUAL_COPY_IDENTIFIED",
+        "SUBPROCESSOR_PENDING",
+        "UNVERIFIED",
+        "CORRECTED"
+      ],
+      "description": "Outcome of a later verification, review, or exception-handling activity against a parent DER."
+    }
+  }
+}

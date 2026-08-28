@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00284",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T22:26:56Z",
+  "request_context": {
+    "request_id": "req-00284",
+    "request_type": "ADMINISTRATIVE_DELETION",
+    "requested_at": "2026-07-03T15:46:54Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-38fce5c"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-4dd1e97",
+    "scope_description": "Correction after verification scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-23T19:01:51Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-20248c5",
+    "recorded_at": "2026-08-25T22:26:56Z",
+    "evidence_references": [
+      "ticket-000284"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "806aa31ea87d1cab311025dae55dfc466403b63814f5a97272a403911cc4263b"
+  }
+}

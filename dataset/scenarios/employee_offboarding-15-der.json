@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00031",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T11:18:18Z",
+  "request_context": {
+    "request_id": "req-00031",
+    "request_type": "EMPLOYEE_OFFBOARDING",
+    "requested_at": "2026-05-28T10:01:30Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-537466f"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-485a51c",
+    "scope_description": "Employee offboarding scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "hr-system-payroll-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-16T08:09:00Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "hr-system-payroll-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "hr-system-payroll-02",
+    "responsible_party_reference": "party-ref-102cffe",
+    "recorded_at": "2026-08-25T11:18:18Z",
+    "evidence_references": [
+      "ticket-000031"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "9e1b793cadb5b442ab8a5678ec783bd9f6f5b289a620f39cf379c08e84fa46ef"
+  }
+}

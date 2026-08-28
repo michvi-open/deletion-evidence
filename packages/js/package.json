@@ -1,0 +1,31 @@
+{
+  "name": "@michvi-open/deletion-evidence",
+  "version": "0.1.0",
+  "description": "Reference implementation for the Deletion Evidence Record (DER) / Verification Exception Record (VER) open specification: canonicalization, SHA-256 integrity hashing, schema validation, and human-readable rendering.",
+  "main": "src/index.js",
+  "type": "commonjs",
+  "license": "Apache-2.0",
+  "private": true,
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "test": "node --test $(find ../../tests -name '*.test.js' -type f | sort)"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {},
+  "keywords": [
+    "deletion-evidence",
+    "data-governance",
+    "evidence-record",
+    "json-schema",
+    "sha-256"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michvi-open/deletion-evidence.git",
+    "directory": "packages/js"
+  }
+}

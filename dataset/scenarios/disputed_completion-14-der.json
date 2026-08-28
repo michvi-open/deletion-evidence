@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00270",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T15:55:16Z",
+  "request_context": {
+    "request_id": "req-00270",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-08-06T20:30:11Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-5d21aae"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-2cb91d5",
+    "scope_description": "Disputed completion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02",
+      "marketing-platform-email-02",
+      "marketing-platform-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-08T12:14:05Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02"
+    ],
+    "systems_pending": [
+      "marketing-platform-email-02",
+      "marketing-platform-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-2d34cbb",
+    "recorded_at": "2026-08-25T15:55:16Z",
+    "evidence_references": [
+      "ticket-000270"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "3cab107606fcded690a0d109fbb3a22c77d15727783cceeb785a6b5fc215ef2d"
+  }
+}

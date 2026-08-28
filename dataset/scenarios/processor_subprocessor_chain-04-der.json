@@ -1,0 +1,54 @@
+{
+  "record_id": "der-00100",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T05:55:13Z",
+  "request_context": {
+    "request_id": "req-00100",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-07-09T09:56:56Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-298eb24"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-412c90f",
+    "scope_description": "Processor/subprocessor chain scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02",
+      "saas-app-core-01",
+      "crm-system-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-hosting-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-17T03:10:22Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02",
+      "saas-app-core-01",
+      "crm-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-513801d",
+    "recorded_at": "2026-08-26T05:55:13Z",
+    "evidence_references": [
+      "ticket-000100"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "c3fd1cab12e409e3613a7c3d85c4394ad8f842212163e448e7176e694ec4c554"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "record_id": "der-00318",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T14:01:29Z",
+  "request_context": {
+    "request_id": "req-00318",
+    "request_type": "VENDOR_EXIT",
+    "requested_at": "2026-07-27T15:56:41Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-a150de"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-2395325",
+    "scope_description": "Vendor exit scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "cloud-storage-eu-02",
+      "saas-app-core-01",
+      "saas-app-billing-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-logistics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-25T11:01:33Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "cloud-storage-eu-02"
+    ],
+    "systems_pending": [
+      "saas-app-core-01",
+      "saas-app-billing-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "cloud-storage-eu-02",
+    "responsible_party_reference": "party-ref-522924b",
+    "recorded_at": "2026-08-25T14:01:29Z",
+    "evidence_references": [
+      "ticket-000318"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "6ed922b7538f70df48dbda87c65bef1019d0905f608cdd6b4412b008a303893f"
+  }
+}

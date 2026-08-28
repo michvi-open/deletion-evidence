@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00197",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T17:45:44Z",
+  "request_context": {
+    "request_id": "req-00197",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-30T00:04:03Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-16bd835"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-1cd2586",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-20T23:15:26Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-billing-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-18c4750",
+    "recorded_at": "2026-08-26T17:45:44Z",
+    "evidence_references": [
+      "ticket-000197"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "2df183a85090ff713b3ef5932facb977a238782300ebc6e85c2d517cae030eb2"
+  }
+}

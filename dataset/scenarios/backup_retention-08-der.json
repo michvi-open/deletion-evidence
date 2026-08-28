@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00120",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T00:32:49Z",
+  "request_context": {
+    "request_id": "req-00120",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-06-20T00:56:32Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-1ecb9f8"
+  },
+  "data_scope": {
+    "data_category": "crm_contact_record",
+    "subject_ref": "subject-ref-55351db",
+    "scope_description": "Backup retention scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "backup-system-offsite-02",
+      "backup-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-23T23:44:56Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "backup-system-offsite-02"
+    ],
+    "systems_pending": [
+      "backup-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "backup-system-offsite-02",
+    "responsible_party_reference": "party-ref-30eec99",
+    "recorded_at": "2026-08-26T00:32:49Z",
+    "evidence_references": [
+      "ticket-000120"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "946954600cf9dc499321baa600d0fbbb0afea73ce813e69ad2bafa186f8f8b95"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00147",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T02:32:37Z",
+  "request_context": {
+    "request_id": "req-00147",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-06-03T23:00:05Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-1f62a3"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-4a1b088",
+    "scope_description": "Account closure scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-12T20:52:15Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-39cc79a",
+    "recorded_at": "2026-08-25T02:32:37Z",
+    "evidence_references": [
+      "ticket-000147"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "c9be1e5f5a62131824e110a9acf76fdd73caddf051247ed9d3f77e4cad76f3d8"
+  }
+}

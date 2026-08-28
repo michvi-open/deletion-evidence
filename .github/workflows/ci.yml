@@ -1,0 +1,30 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Run test suite
+        run: node --test $(find tests -name '*.test.js' -type f | sort)
+
+      - name: Regenerate dataset
+        run: node dataset/generate.js
+
+      - name: Re-run test suite after regeneration
+        run: node --test $(find tests -name '*.test.js' -type f | sort)

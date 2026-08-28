@@ -1,0 +1,49 @@
+{
+  "record_id": "der-00056",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T12:09:08Z",
+  "request_context": {
+    "request_id": "req-00056",
+    "request_type": "RETENTION_EXPIRY",
+    "requested_at": "2026-06-13T10:39:53Z",
+    "requesting_role": "data_subject",
+    "requesting_organization_ref": "org-ref-2e290b8"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-206f1b",
+    "scope_description": "Analytics platform deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-platform-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-hosting-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "analytics-platform-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-platform-01",
+    "responsible_party_reference": "party-ref-5f070d9",
+    "recorded_at": "2026-08-25T12:09:08Z",
+    "evidence_references": [
+      "ticket-000056"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f7c376e938d40c13fddbf7e55573c2311a6235fed8205ce428c10dda2d5a7d51"
+  }
+}

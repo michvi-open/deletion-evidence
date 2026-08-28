@@ -1,0 +1,51 @@
+{
+  "record_id": "der-00141",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T22:33:39Z",
+  "request_context": {
+    "request_id": "req-00141",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-17T15:12:02Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-47f287d"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-572b47e",
+    "scope_description": "Legal hold scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02",
+      "saas-app-billing-01",
+      "saas-app-core-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "LEGAL_HOLD",
+    "executed_at": "2026-08-23T17:43:49Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02"
+    ],
+    "systems_pending": [
+      "saas-app-billing-01",
+      "saas-app-core-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-4d05728",
+    "recorded_at": "2026-08-25T22:33:39Z",
+    "evidence_references": [
+      "ticket-000141"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "8adf7f18f8182574a3350da3a399f588c946412c574f183a12fa1f6f61eee7cf"
+  }
+}

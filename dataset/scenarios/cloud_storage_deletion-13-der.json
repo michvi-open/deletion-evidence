@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00077",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T19:30:57Z",
+  "request_context": {
+    "request_id": "req-00077",
+    "request_type": "ADMINISTRATIVE_DELETION",
+    "requested_at": "2026-06-10T12:51:41Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-574ff3d"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-3fd1be",
+    "scope_description": "Cloud-storage deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "cloud-storage-eu-02",
+      "cloud-storage-primary-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING_SUBPROCESSOR",
+    "executed_at": "2026-08-18T00:03:14Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "cloud-storage-eu-02"
+    ],
+    "systems_pending": [
+      "cloud-storage-primary-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "cloud-storage-eu-02",
+    "responsible_party_reference": "party-ref-1bbfa68",
+    "recorded_at": "2026-08-25T19:30:57Z",
+    "evidence_references": [
+      "ticket-000077"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "dfde9c74d31df315d1cc73e4ee6b4c0e3bbc56d6e6a8f06952d4f356df64c8e0"
+  }
+}

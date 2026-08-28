@@ -1,0 +1,51 @@
+{
+  "record_id": "der-00244",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T22:48:39Z",
+  "request_context": {
+    "request_id": "req-00244",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-27T17:23:59Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-4e830b4"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-25c0cff",
+    "scope_description": "Residual backup scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "cloud-storage-primary-01",
+      "backup-system-01",
+      "cloud-storage-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING_SUBPROCESSOR",
+    "executed_at": "2026-08-12T17:52:07Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "cloud-storage-primary-01"
+    ],
+    "systems_pending": [
+      "backup-system-01",
+      "cloud-storage-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "cloud-storage-primary-01",
+    "responsible_party_reference": "party-ref-158ecd",
+    "recorded_at": "2026-08-26T22:48:39Z",
+    "evidence_references": [
+      "ticket-000244"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "0af13b6bca4e9a986b6ada52abfabe7a4e2fe6de7df01132319fa71fe3e77bb1"
+  }
+}

@@ -1,0 +1,3388 @@
+{
+  "schema_version": "0.1.0",
+  "generated_from": "dataset/generate.js",
+  "families": [
+    {
+      "key": "saas_customer_offboarding",
+      "label": "SaaS customer offboarding",
+      "request_types": [
+        "CUSTOMER_OFFBOARDING"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 8
+    },
+    {
+      "key": "employee_offboarding",
+      "label": "Employee offboarding",
+      "request_types": [
+        "EMPLOYEE_OFFBOARDING"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 7
+    },
+    {
+      "key": "crm_record_deletion",
+      "label": "CRM record deletion",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST",
+        "ADMINISTRATIVE_DELETION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 9
+    },
+    {
+      "key": "analytics_platform_deletion",
+      "label": "Analytics platform deletion",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST",
+        "RETENTION_EXPIRY"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 5
+    },
+    {
+      "key": "cloud_storage_deletion",
+      "label": "Cloud-storage deletion",
+      "request_types": [
+        "ACCOUNT_CLOSURE",
+        "ADMINISTRATIVE_DELETION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 6
+    },
+    {
+      "key": "marketing_platform_deletion",
+      "label": "Marketing platform deletion",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 5
+    },
+    {
+      "key": "processor_subprocessor_chain",
+      "label": "Processor/subprocessor chain",
+      "request_types": [
+        "VENDOR_EXIT",
+        "CONTRACT_TERMINATION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "backup_retention",
+      "label": "Backup retention",
+      "request_types": [
+        "RETENTION_EXPIRY",
+        "ACCOUNT_CLOSURE"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 5
+    },
+    {
+      "key": "legal_hold",
+      "label": "Legal hold",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST",
+        "CONTRACT_TERMINATION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "account_closure",
+      "label": "Account closure",
+      "request_types": [
+        "ACCOUNT_CLOSURE"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 7
+    },
+    {
+      "key": "contract_termination",
+      "label": "Contract termination",
+      "request_types": [
+        "CONTRACT_TERMINATION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 3
+    },
+    {
+      "key": "data_migration",
+      "label": "Data migration",
+      "request_types": [
+        "SYSTEM_MIGRATION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 2
+    },
+    {
+      "key": "incomplete_deletion",
+      "label": "Incomplete deletion",
+      "request_types": [
+        "ACCOUNT_CLOSURE",
+        "DATA_SUBJECT_REQUEST"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 5
+    },
+    {
+      "key": "delayed_subprocessor_deletion",
+      "label": "Delayed subprocessor deletion",
+      "request_types": [
+        "VENDOR_EXIT",
+        "CUSTOMER_OFFBOARDING"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "deletion_exception",
+      "label": "Deletion exception",
+      "request_types": [
+        "ADMINISTRATIVE_DELETION",
+        "ACCOUNT_CLOSURE"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "residual_backup",
+      "label": "Residual backup",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST",
+        "RETENTION_EXPIRY"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "disputed_completion",
+      "label": "Disputed completion",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "correction_after_verification",
+      "label": "Correction after verification",
+      "request_types": [
+        "DATA_SUBJECT_REQUEST",
+        "ADMINISTRATIVE_DELETION"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 16
+    },
+    {
+      "key": "multi_system_deletion",
+      "label": "Multi-system deletion",
+      "request_types": [
+        "ACCOUNT_CLOSURE",
+        "CUSTOMER_OFFBOARDING"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 5
+    },
+    {
+      "key": "vendor_exit",
+      "label": "Vendor exit",
+      "request_types": [
+        "VENDOR_EXIT"
+      ],
+      "scenario_count": 16,
+      "with_ver_count": 4
+    }
+  ],
+  "scenarios": [
+    {
+      "scenario_id": "saas_customer_offboarding-01",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-01-der.json",
+      "der_record_id": "der-00001",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-01-ver.json",
+      "ver_record_id": "ver-00001",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-02",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-02-der.json",
+      "der_record_id": "der-00002",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-02-ver.json",
+      "ver_record_id": "ver-00002",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-03",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-03-der.json",
+      "der_record_id": "der-00003",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-03-ver.json",
+      "ver_record_id": "ver-00003",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-04",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-04-der.json",
+      "der_record_id": "der-00004",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-04-ver.json",
+      "ver_record_id": "ver-00004",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-05",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-05-der.json",
+      "der_record_id": "der-00005",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-06",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-06-der.json",
+      "der_record_id": "der-00006",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-07",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-07-der.json",
+      "der_record_id": "der-00007",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-07-ver.json",
+      "ver_record_id": "ver-00007",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-08",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-08-der.json",
+      "der_record_id": "der-00008",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-09",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-09-der.json",
+      "der_record_id": "der-00009",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-10",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-10-der.json",
+      "der_record_id": "der-00010",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-11",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-11-der.json",
+      "der_record_id": "der-00011",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-12",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-12-der.json",
+      "der_record_id": "der-00012",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-12-ver.json",
+      "ver_record_id": "ver-00012",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-13",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-13-der.json",
+      "der_record_id": "der-00013",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-13-ver.json",
+      "ver_record_id": "ver-00013",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-14",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-14-der.json",
+      "der_record_id": "der-00014",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-15",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-15-der.json",
+      "der_record_id": "der-00015",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "saas_customer_offboarding-16",
+      "family": "saas_customer_offboarding",
+      "der_file": "scenarios/saas_customer_offboarding-16-der.json",
+      "der_record_id": "der-00016",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/saas_customer_offboarding-16-ver.json",
+      "ver_record_id": "ver-00016",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "employee_offboarding-01",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-01-der.json",
+      "der_record_id": "der-00017",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-01-ver.json",
+      "ver_record_id": "ver-00017",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "employee_offboarding-02",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-02-der.json",
+      "der_record_id": "der-00018",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-02-ver.json",
+      "ver_record_id": "ver-00018",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "employee_offboarding-03",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-03-der.json",
+      "der_record_id": "der-00019",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-04",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-04-der.json",
+      "der_record_id": "der-00020",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-05",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-05-der.json",
+      "der_record_id": "der-00021",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-05-ver.json",
+      "ver_record_id": "ver-00021",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "employee_offboarding-06",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-06-der.json",
+      "der_record_id": "der-00022",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-07",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-07-der.json",
+      "der_record_id": "der-00023",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-08",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-08-der.json",
+      "der_record_id": "der-00024",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-08-ver.json",
+      "ver_record_id": "ver-00024",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "employee_offboarding-09",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-09-der.json",
+      "der_record_id": "der-00025",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-10",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-10-der.json",
+      "der_record_id": "der-00026",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-11",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-11-der.json",
+      "der_record_id": "der-00027",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-11-ver.json",
+      "ver_record_id": "ver-00027",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "employee_offboarding-12",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-12-der.json",
+      "der_record_id": "der-00028",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-12-ver.json",
+      "ver_record_id": "ver-00028",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "employee_offboarding-13",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-13-der.json",
+      "der_record_id": "der-00029",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-14",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-14-der.json",
+      "der_record_id": "der-00030",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "employee_offboarding-15",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-15-der.json",
+      "der_record_id": "der-00031",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/employee_offboarding-15-ver.json",
+      "ver_record_id": "ver-00031",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "employee_offboarding-16",
+      "family": "employee_offboarding",
+      "der_file": "scenarios/employee_offboarding-16-der.json",
+      "der_record_id": "der-00032",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-01",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-01-der.json",
+      "der_record_id": "der-00033",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-01-ver.json",
+      "ver_record_id": "ver-00033",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-02",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-02-der.json",
+      "der_record_id": "der-00034",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-03",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-03-der.json",
+      "der_record_id": "der-00035",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-04",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-04-der.json",
+      "der_record_id": "der-00036",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-04-ver.json",
+      "ver_record_id": "ver-00036",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-05",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-05-der.json",
+      "der_record_id": "der-00037",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-05-ver.json",
+      "ver_record_id": "ver-00037",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "crm_record_deletion-06",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-06-der.json",
+      "der_record_id": "der-00038",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-07",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-07-der.json",
+      "der_record_id": "der-00039",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-07-ver.json",
+      "ver_record_id": "ver-00039",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-08",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-08-der.json",
+      "der_record_id": "der-00040",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-09",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-09-der.json",
+      "der_record_id": "der-00041",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-10",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-10-der.json",
+      "der_record_id": "der-00042",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-10-ver.json",
+      "ver_record_id": "ver-00042",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-11",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-11-der.json",
+      "der_record_id": "der-00043",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-12",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-12-der.json",
+      "der_record_id": "der-00044",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "crm_record_deletion-13",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-13-der.json",
+      "der_record_id": "der-00045",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-13-ver.json",
+      "ver_record_id": "ver-00045",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-14",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-14-der.json",
+      "der_record_id": "der-00046",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-14-ver.json",
+      "ver_record_id": "ver-00046",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-15",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-15-der.json",
+      "der_record_id": "der-00047",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-15-ver.json",
+      "ver_record_id": "ver-00047",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "crm_record_deletion-16",
+      "family": "crm_record_deletion",
+      "der_file": "scenarios/crm_record_deletion-16-der.json",
+      "der_record_id": "der-00048",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/crm_record_deletion-16-ver.json",
+      "ver_record_id": "ver-00048",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-01",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-01-der.json",
+      "der_record_id": "der-00049",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-02",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-02-der.json",
+      "der_record_id": "der-00050",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/analytics_platform_deletion-02-ver.json",
+      "ver_record_id": "ver-00050",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-03",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-03-der.json",
+      "der_record_id": "der-00051",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-04",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-04-der.json",
+      "der_record_id": "der-00052",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-05",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-05-der.json",
+      "der_record_id": "der-00053",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-06",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-06-der.json",
+      "der_record_id": "der-00054",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-07",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-07-der.json",
+      "der_record_id": "der-00055",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-08",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-08-der.json",
+      "der_record_id": "der-00056",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-09",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-09-der.json",
+      "der_record_id": "der-00057",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-10",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-10-der.json",
+      "der_record_id": "der-00058",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-11",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-11-der.json",
+      "der_record_id": "der-00059",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-12",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-12-der.json",
+      "der_record_id": "der-00060",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/analytics_platform_deletion-12-ver.json",
+      "ver_record_id": "ver-00060",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-13",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-13-der.json",
+      "der_record_id": "der-00061",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/analytics_platform_deletion-13-ver.json",
+      "ver_record_id": "ver-00061",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-14",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-14-der.json",
+      "der_record_id": "der-00062",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/analytics_platform_deletion-14-ver.json",
+      "ver_record_id": "ver-00062",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-15",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-15-der.json",
+      "der_record_id": "der-00063",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/analytics_platform_deletion-15-ver.json",
+      "ver_record_id": "ver-00063",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "analytics_platform_deletion-16",
+      "family": "analytics_platform_deletion",
+      "der_file": "scenarios/analytics_platform_deletion-16-der.json",
+      "der_record_id": "der-00064",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-01",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-01-der.json",
+      "der_record_id": "der-00065",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-02",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-02-der.json",
+      "der_record_id": "der-00066",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-03",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-03-der.json",
+      "der_record_id": "der-00067",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-04",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-04-der.json",
+      "der_record_id": "der-00068",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-05",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-05-der.json",
+      "der_record_id": "der-00069",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-05-ver.json",
+      "ver_record_id": "ver-00069",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-06",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-06-der.json",
+      "der_record_id": "der-00070",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-06-ver.json",
+      "ver_record_id": "ver-00070",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-07",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-07-der.json",
+      "der_record_id": "der-00071",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-07-ver.json",
+      "ver_record_id": "ver-00071",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-08",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-08-der.json",
+      "der_record_id": "der-00072",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-09",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-09-der.json",
+      "der_record_id": "der-00073",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-09-ver.json",
+      "ver_record_id": "ver-00073",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-10",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-10-der.json",
+      "der_record_id": "der-00074",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-11",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-11-der.json",
+      "der_record_id": "der-00075",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-11-ver.json",
+      "ver_record_id": "ver-00075",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-12",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-12-der.json",
+      "der_record_id": "der-00076",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-13",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-13-der.json",
+      "der_record_id": "der-00077",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-14",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-14-der.json",
+      "der_record_id": "der-00078",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/cloud_storage_deletion-14-ver.json",
+      "ver_record_id": "ver-00078",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-15",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-15-der.json",
+      "der_record_id": "der-00079",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "cloud_storage_deletion-16",
+      "family": "cloud_storage_deletion",
+      "der_file": "scenarios/cloud_storage_deletion-16-der.json",
+      "der_record_id": "der-00080",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-01",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-01-der.json",
+      "der_record_id": "der-00081",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-02",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-02-der.json",
+      "der_record_id": "der-00082",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-03",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-03-der.json",
+      "der_record_id": "der-00083",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-04",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-04-der.json",
+      "der_record_id": "der-00084",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-05",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-05-der.json",
+      "der_record_id": "der-00085",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-06",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-06-der.json",
+      "der_record_id": "der-00086",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/marketing_platform_deletion-06-ver.json",
+      "ver_record_id": "ver-00086",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-07",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-07-der.json",
+      "der_record_id": "der-00087",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-08",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-08-der.json",
+      "der_record_id": "der-00088",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/marketing_platform_deletion-08-ver.json",
+      "ver_record_id": "ver-00088",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-09",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-09-der.json",
+      "der_record_id": "der-00089",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-10",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-10-der.json",
+      "der_record_id": "der-00090",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-11",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-11-der.json",
+      "der_record_id": "der-00091",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-12",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-12-der.json",
+      "der_record_id": "der-00092",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-13",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-13-der.json",
+      "der_record_id": "der-00093",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-14",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-14-der.json",
+      "der_record_id": "der-00094",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/marketing_platform_deletion-14-ver.json",
+      "ver_record_id": "ver-00094",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-15",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-15-der.json",
+      "der_record_id": "der-00095",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/marketing_platform_deletion-15-ver.json",
+      "ver_record_id": "ver-00095",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "marketing_platform_deletion-16",
+      "family": "marketing_platform_deletion",
+      "der_file": "scenarios/marketing_platform_deletion-16-der.json",
+      "der_record_id": "der-00096",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/marketing_platform_deletion-16-ver.json",
+      "ver_record_id": "ver-00096",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-01",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-01-der.json",
+      "der_record_id": "der-00097",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-01-ver.json",
+      "ver_record_id": "ver-00097",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-02",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-02-der.json",
+      "der_record_id": "der-00098",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-02-ver.json",
+      "ver_record_id": "ver-00098",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-03",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-03-der.json",
+      "der_record_id": "der-00099",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-03-ver.json",
+      "ver_record_id": "ver-00099",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-04",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-04-der.json",
+      "der_record_id": "der-00100",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-04-ver.json",
+      "ver_record_id": "ver-00100",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-05",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-05-der.json",
+      "der_record_id": "der-00101",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-05-ver.json",
+      "ver_record_id": "ver-00101",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-06",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-06-der.json",
+      "der_record_id": "der-00102",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-06-ver.json",
+      "ver_record_id": "ver-00102",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-07",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-07-der.json",
+      "der_record_id": "der-00103",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-07-ver.json",
+      "ver_record_id": "ver-00103",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-08",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-08-der.json",
+      "der_record_id": "der-00104",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-08-ver.json",
+      "ver_record_id": "ver-00104",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-09",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-09-der.json",
+      "der_record_id": "der-00105",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-09-ver.json",
+      "ver_record_id": "ver-00105",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-10",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-10-der.json",
+      "der_record_id": "der-00106",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-10-ver.json",
+      "ver_record_id": "ver-00106",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-11",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-11-der.json",
+      "der_record_id": "der-00107",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-11-ver.json",
+      "ver_record_id": "ver-00107",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-12",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-12-der.json",
+      "der_record_id": "der-00108",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-12-ver.json",
+      "ver_record_id": "ver-00108",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-13",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-13-der.json",
+      "der_record_id": "der-00109",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-13-ver.json",
+      "ver_record_id": "ver-00109",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-14",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-14-der.json",
+      "der_record_id": "der-00110",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-14-ver.json",
+      "ver_record_id": "ver-00110",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-15",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-15-der.json",
+      "der_record_id": "der-00111",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-15-ver.json",
+      "ver_record_id": "ver-00111",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "processor_subprocessor_chain-16",
+      "family": "processor_subprocessor_chain",
+      "der_file": "scenarios/processor_subprocessor_chain-16-der.json",
+      "der_record_id": "der-00112",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/processor_subprocessor_chain-16-ver.json",
+      "ver_record_id": "ver-00112",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "backup_retention-01",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-01-der.json",
+      "der_record_id": "der-00113",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-02",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-02-der.json",
+      "der_record_id": "der-00114",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/backup_retention-02-ver.json",
+      "ver_record_id": "ver-00114",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "backup_retention-03",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-03-der.json",
+      "der_record_id": "der-00115",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-04",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-04-der.json",
+      "der_record_id": "der-00116",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-05",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-05-der.json",
+      "der_record_id": "der-00117",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-06",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-06-der.json",
+      "der_record_id": "der-00118",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-07",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-07-der.json",
+      "der_record_id": "der-00119",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-08",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-08-der.json",
+      "der_record_id": "der-00120",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-09",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-09-der.json",
+      "der_record_id": "der-00121",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/backup_retention-09-ver.json",
+      "ver_record_id": "ver-00121",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "backup_retention-10",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-10-der.json",
+      "der_record_id": "der-00122",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/backup_retention-10-ver.json",
+      "ver_record_id": "ver-00122",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "backup_retention-11",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-11-der.json",
+      "der_record_id": "der-00123",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-12",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-12-der.json",
+      "der_record_id": "der-00124",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-13",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-13-der.json",
+      "der_record_id": "der-00125",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/backup_retention-13-ver.json",
+      "ver_record_id": "ver-00125",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "backup_retention-14",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-14-der.json",
+      "der_record_id": "der-00126",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/backup_retention-14-ver.json",
+      "ver_record_id": "ver-00126",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "backup_retention-15",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-15-der.json",
+      "der_record_id": "der-00127",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "backup_retention-16",
+      "family": "backup_retention",
+      "der_file": "scenarios/backup_retention-16-der.json",
+      "der_record_id": "der-00128",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "legal_hold-01",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-01-der.json",
+      "der_record_id": "der-00129",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-01-ver.json",
+      "ver_record_id": "ver-00129",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-02",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-02-der.json",
+      "der_record_id": "der-00130",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-02-ver.json",
+      "ver_record_id": "ver-00130",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-03",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-03-der.json",
+      "der_record_id": "der-00131",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-03-ver.json",
+      "ver_record_id": "ver-00131",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-04",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-04-der.json",
+      "der_record_id": "der-00132",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-04-ver.json",
+      "ver_record_id": "ver-00132",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-05",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-05-der.json",
+      "der_record_id": "der-00133",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-05-ver.json",
+      "ver_record_id": "ver-00133",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-06",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-06-der.json",
+      "der_record_id": "der-00134",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-06-ver.json",
+      "ver_record_id": "ver-00134",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-07",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-07-der.json",
+      "der_record_id": "der-00135",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-07-ver.json",
+      "ver_record_id": "ver-00135",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-08",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-08-der.json",
+      "der_record_id": "der-00136",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-08-ver.json",
+      "ver_record_id": "ver-00136",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-09",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-09-der.json",
+      "der_record_id": "der-00137",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-09-ver.json",
+      "ver_record_id": "ver-00137",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-10",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-10-der.json",
+      "der_record_id": "der-00138",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-10-ver.json",
+      "ver_record_id": "ver-00138",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-11",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-11-der.json",
+      "der_record_id": "der-00139",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-11-ver.json",
+      "ver_record_id": "ver-00139",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-12",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-12-der.json",
+      "der_record_id": "der-00140",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-12-ver.json",
+      "ver_record_id": "ver-00140",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-13",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-13-der.json",
+      "der_record_id": "der-00141",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-13-ver.json",
+      "ver_record_id": "ver-00141",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-14",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-14-der.json",
+      "der_record_id": "der-00142",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-14-ver.json",
+      "ver_record_id": "ver-00142",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-15",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-15-der.json",
+      "der_record_id": "der-00143",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-15-ver.json",
+      "ver_record_id": "ver-00143",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "legal_hold-16",
+      "family": "legal_hold",
+      "der_file": "scenarios/legal_hold-16-der.json",
+      "der_record_id": "der-00144",
+      "execution_status": "LEGAL_HOLD",
+      "has_ver": true,
+      "ver_file": "scenarios/legal_hold-16-ver.json",
+      "ver_record_id": "ver-00144",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "account_closure-01",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-01-der.json",
+      "der_record_id": "der-00145",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-01-ver.json",
+      "ver_record_id": "ver-00145",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "account_closure-02",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-02-der.json",
+      "der_record_id": "der-00146",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-02-ver.json",
+      "ver_record_id": "ver-00146",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "account_closure-03",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-03-der.json",
+      "der_record_id": "der-00147",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-03-ver.json",
+      "ver_record_id": "ver-00147",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "account_closure-04",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-04-der.json",
+      "der_record_id": "der-00148",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-05",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-05-der.json",
+      "der_record_id": "der-00149",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-06",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-06-der.json",
+      "der_record_id": "der-00150",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-07",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-07-der.json",
+      "der_record_id": "der-00151",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-07-ver.json",
+      "ver_record_id": "ver-00151",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "account_closure-08",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-08-der.json",
+      "der_record_id": "der-00152",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-09",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-09-der.json",
+      "der_record_id": "der-00153",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-10",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-10-der.json",
+      "der_record_id": "der-00154",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-10-ver.json",
+      "ver_record_id": "ver-00154",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "account_closure-11",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-11-der.json",
+      "der_record_id": "der-00155",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-11-ver.json",
+      "ver_record_id": "ver-00155",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "account_closure-12",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-12-der.json",
+      "der_record_id": "der-00156",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-13",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-13-der.json",
+      "der_record_id": "der-00157",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/account_closure-13-ver.json",
+      "ver_record_id": "ver-00157",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "account_closure-14",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-14-der.json",
+      "der_record_id": "der-00158",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-15",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-15-der.json",
+      "der_record_id": "der-00159",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "account_closure-16",
+      "family": "account_closure",
+      "der_file": "scenarios/account_closure-16-der.json",
+      "der_record_id": "der-00160",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-01",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-01-der.json",
+      "der_record_id": "der-00161",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-02",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-02-der.json",
+      "der_record_id": "der-00162",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/contract_termination-02-ver.json",
+      "ver_record_id": "ver-00162",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "contract_termination-03",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-03-der.json",
+      "der_record_id": "der-00163",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/contract_termination-03-ver.json",
+      "ver_record_id": "ver-00163",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "contract_termination-04",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-04-der.json",
+      "der_record_id": "der-00164",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-05",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-05-der.json",
+      "der_record_id": "der-00165",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-06",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-06-der.json",
+      "der_record_id": "der-00166",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-07",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-07-der.json",
+      "der_record_id": "der-00167",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-08",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-08-der.json",
+      "der_record_id": "der-00168",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-09",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-09-der.json",
+      "der_record_id": "der-00169",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-10",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-10-der.json",
+      "der_record_id": "der-00170",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-11",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-11-der.json",
+      "der_record_id": "der-00171",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-12",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-12-der.json",
+      "der_record_id": "der-00172",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-13",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-13-der.json",
+      "der_record_id": "der-00173",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/contract_termination-13-ver.json",
+      "ver_record_id": "ver-00173",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "contract_termination-14",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-14-der.json",
+      "der_record_id": "der-00174",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-15",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-15-der.json",
+      "der_record_id": "der-00175",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "contract_termination-16",
+      "family": "contract_termination",
+      "der_file": "scenarios/contract_termination-16-der.json",
+      "der_record_id": "der-00176",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-01",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-01-der.json",
+      "der_record_id": "der-00177",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-02",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-02-der.json",
+      "der_record_id": "der-00178",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-03",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-03-der.json",
+      "der_record_id": "der-00179",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-04",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-04-der.json",
+      "der_record_id": "der-00180",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-05",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-05-der.json",
+      "der_record_id": "der-00181",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-06",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-06-der.json",
+      "der_record_id": "der-00182",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-07",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-07-der.json",
+      "der_record_id": "der-00183",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/data_migration-07-ver.json",
+      "ver_record_id": "ver-00183",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "data_migration-08",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-08-der.json",
+      "der_record_id": "der-00184",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-09",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-09-der.json",
+      "der_record_id": "der-00185",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-10",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-10-der.json",
+      "der_record_id": "der-00186",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-11",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-11-der.json",
+      "der_record_id": "der-00187",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-12",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-12-der.json",
+      "der_record_id": "der-00188",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/data_migration-12-ver.json",
+      "ver_record_id": "ver-00188",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "data_migration-13",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-13-der.json",
+      "der_record_id": "der-00189",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-14",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-14-der.json",
+      "der_record_id": "der-00190",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-15",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-15-der.json",
+      "der_record_id": "der-00191",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "data_migration-16",
+      "family": "data_migration",
+      "der_file": "scenarios/data_migration-16-der.json",
+      "der_record_id": "der-00192",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-01",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-01-der.json",
+      "der_record_id": "der-00193",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/incomplete_deletion-01-ver.json",
+      "ver_record_id": "ver-00193",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "incomplete_deletion-02",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-02-der.json",
+      "der_record_id": "der-00194",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-03",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-03-der.json",
+      "der_record_id": "der-00195",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-04",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-04-der.json",
+      "der_record_id": "der-00196",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-05",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-05-der.json",
+      "der_record_id": "der-00197",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/incomplete_deletion-05-ver.json",
+      "ver_record_id": "ver-00197",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "incomplete_deletion-06",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-06-der.json",
+      "der_record_id": "der-00198",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-07",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-07-der.json",
+      "der_record_id": "der-00199",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-08",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-08-der.json",
+      "der_record_id": "der-00200",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/incomplete_deletion-08-ver.json",
+      "ver_record_id": "ver-00200",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "incomplete_deletion-09",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-09-der.json",
+      "der_record_id": "der-00201",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-10",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-10-der.json",
+      "der_record_id": "der-00202",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/incomplete_deletion-10-ver.json",
+      "ver_record_id": "ver-00202",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "incomplete_deletion-11",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-11-der.json",
+      "der_record_id": "der-00203",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-12",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-12-der.json",
+      "der_record_id": "der-00204",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-13",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-13-der.json",
+      "der_record_id": "der-00205",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-14",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-14-der.json",
+      "der_record_id": "der-00206",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "incomplete_deletion-15",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-15-der.json",
+      "der_record_id": "der-00207",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/incomplete_deletion-15-ver.json",
+      "ver_record_id": "ver-00207",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "incomplete_deletion-16",
+      "family": "incomplete_deletion",
+      "der_file": "scenarios/incomplete_deletion-16-der.json",
+      "der_record_id": "der-00208",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-01",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-01-der.json",
+      "der_record_id": "der-00209",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-01-ver.json",
+      "ver_record_id": "ver-00209",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-02",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-02-der.json",
+      "der_record_id": "der-00210",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-02-ver.json",
+      "ver_record_id": "ver-00210",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-03",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-03-der.json",
+      "der_record_id": "der-00211",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-03-ver.json",
+      "ver_record_id": "ver-00211",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-04",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-04-der.json",
+      "der_record_id": "der-00212",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-04-ver.json",
+      "ver_record_id": "ver-00212",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-05",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-05-der.json",
+      "der_record_id": "der-00213",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-05-ver.json",
+      "ver_record_id": "ver-00213",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-06",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-06-der.json",
+      "der_record_id": "der-00214",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-06-ver.json",
+      "ver_record_id": "ver-00214",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-07",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-07-der.json",
+      "der_record_id": "der-00215",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-07-ver.json",
+      "ver_record_id": "ver-00215",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-08",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-08-der.json",
+      "der_record_id": "der-00216",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-08-ver.json",
+      "ver_record_id": "ver-00216",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-09",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-09-der.json",
+      "der_record_id": "der-00217",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-09-ver.json",
+      "ver_record_id": "ver-00217",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-10",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-10-der.json",
+      "der_record_id": "der-00218",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-10-ver.json",
+      "ver_record_id": "ver-00218",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-11",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-11-der.json",
+      "der_record_id": "der-00219",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-11-ver.json",
+      "ver_record_id": "ver-00219",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-12",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-12-der.json",
+      "der_record_id": "der-00220",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-12-ver.json",
+      "ver_record_id": "ver-00220",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-13",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-13-der.json",
+      "der_record_id": "der-00221",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-13-ver.json",
+      "ver_record_id": "ver-00221",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-14",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-14-der.json",
+      "der_record_id": "der-00222",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-14-ver.json",
+      "ver_record_id": "ver-00222",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-15",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-15-der.json",
+      "der_record_id": "der-00223",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-15-ver.json",
+      "ver_record_id": "ver-00223",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "delayed_subprocessor_deletion-16",
+      "family": "delayed_subprocessor_deletion",
+      "der_file": "scenarios/delayed_subprocessor_deletion-16-der.json",
+      "der_record_id": "der-00224",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/delayed_subprocessor_deletion-16-ver.json",
+      "ver_record_id": "ver-00224",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "deletion_exception-01",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-01-der.json",
+      "der_record_id": "der-00225",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-01-ver.json",
+      "ver_record_id": "ver-00225",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-02",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-02-der.json",
+      "der_record_id": "der-00226",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-02-ver.json",
+      "ver_record_id": "ver-00226",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-03",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-03-der.json",
+      "der_record_id": "der-00227",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-03-ver.json",
+      "ver_record_id": "ver-00227",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-04",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-04-der.json",
+      "der_record_id": "der-00228",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-04-ver.json",
+      "ver_record_id": "ver-00228",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-05",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-05-der.json",
+      "der_record_id": "der-00229",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-05-ver.json",
+      "ver_record_id": "ver-00229",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-06",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-06-der.json",
+      "der_record_id": "der-00230",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-06-ver.json",
+      "ver_record_id": "ver-00230",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-07",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-07-der.json",
+      "der_record_id": "der-00231",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-07-ver.json",
+      "ver_record_id": "ver-00231",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-08",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-08-der.json",
+      "der_record_id": "der-00232",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-08-ver.json",
+      "ver_record_id": "ver-00232",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-09",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-09-der.json",
+      "der_record_id": "der-00233",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-09-ver.json",
+      "ver_record_id": "ver-00233",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-10",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-10-der.json",
+      "der_record_id": "der-00234",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-10-ver.json",
+      "ver_record_id": "ver-00234",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-11",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-11-der.json",
+      "der_record_id": "der-00235",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-11-ver.json",
+      "ver_record_id": "ver-00235",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-12",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-12-der.json",
+      "der_record_id": "der-00236",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-12-ver.json",
+      "ver_record_id": "ver-00236",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-13",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-13-der.json",
+      "der_record_id": "der-00237",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-13-ver.json",
+      "ver_record_id": "ver-00237",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-14",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-14-der.json",
+      "der_record_id": "der-00238",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-14-ver.json",
+      "ver_record_id": "ver-00238",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-15",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-15-der.json",
+      "der_record_id": "der-00239",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-15-ver.json",
+      "ver_record_id": "ver-00239",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "deletion_exception-16",
+      "family": "deletion_exception",
+      "der_file": "scenarios/deletion_exception-16-der.json",
+      "der_record_id": "der-00240",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/deletion_exception-16-ver.json",
+      "ver_record_id": "ver-00240",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-01",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-01-der.json",
+      "der_record_id": "der-00241",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-01-ver.json",
+      "ver_record_id": "ver-00241",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-02",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-02-der.json",
+      "der_record_id": "der-00242",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-02-ver.json",
+      "ver_record_id": "ver-00242",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-03",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-03-der.json",
+      "der_record_id": "der-00243",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-03-ver.json",
+      "ver_record_id": "ver-00243",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-04",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-04-der.json",
+      "der_record_id": "der-00244",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-04-ver.json",
+      "ver_record_id": "ver-00244",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-05",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-05-der.json",
+      "der_record_id": "der-00245",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-05-ver.json",
+      "ver_record_id": "ver-00245",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-06",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-06-der.json",
+      "der_record_id": "der-00246",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-06-ver.json",
+      "ver_record_id": "ver-00246",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-07",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-07-der.json",
+      "der_record_id": "der-00247",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-07-ver.json",
+      "ver_record_id": "ver-00247",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-08",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-08-der.json",
+      "der_record_id": "der-00248",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-08-ver.json",
+      "ver_record_id": "ver-00248",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-09",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-09-der.json",
+      "der_record_id": "der-00249",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-09-ver.json",
+      "ver_record_id": "ver-00249",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-10",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-10-der.json",
+      "der_record_id": "der-00250",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-10-ver.json",
+      "ver_record_id": "ver-00250",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-11",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-11-der.json",
+      "der_record_id": "der-00251",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-11-ver.json",
+      "ver_record_id": "ver-00251",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-12",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-12-der.json",
+      "der_record_id": "der-00252",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-12-ver.json",
+      "ver_record_id": "ver-00252",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-13",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-13-der.json",
+      "der_record_id": "der-00253",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-13-ver.json",
+      "ver_record_id": "ver-00253",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-14",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-14-der.json",
+      "der_record_id": "der-00254",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-14-ver.json",
+      "ver_record_id": "ver-00254",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-15",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-15-der.json",
+      "der_record_id": "der-00255",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-15-ver.json",
+      "ver_record_id": "ver-00255",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "residual_backup-16",
+      "family": "residual_backup",
+      "der_file": "scenarios/residual_backup-16-der.json",
+      "der_record_id": "der-00256",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/residual_backup-16-ver.json",
+      "ver_record_id": "ver-00256",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-01",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-01-der.json",
+      "der_record_id": "der-00257",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-01-ver.json",
+      "ver_record_id": "ver-00257",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-02",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-02-der.json",
+      "der_record_id": "der-00258",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-02-ver.json",
+      "ver_record_id": "ver-00258",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-03",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-03-der.json",
+      "der_record_id": "der-00259",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-03-ver.json",
+      "ver_record_id": "ver-00259",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-04",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-04-der.json",
+      "der_record_id": "der-00260",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-04-ver.json",
+      "ver_record_id": "ver-00260",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-05",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-05-der.json",
+      "der_record_id": "der-00261",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-05-ver.json",
+      "ver_record_id": "ver-00261",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-06",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-06-der.json",
+      "der_record_id": "der-00262",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-06-ver.json",
+      "ver_record_id": "ver-00262",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-07",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-07-der.json",
+      "der_record_id": "der-00263",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-07-ver.json",
+      "ver_record_id": "ver-00263",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-08",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-08-der.json",
+      "der_record_id": "der-00264",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-08-ver.json",
+      "ver_record_id": "ver-00264",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-09",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-09-der.json",
+      "der_record_id": "der-00265",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-09-ver.json",
+      "ver_record_id": "ver-00265",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-10",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-10-der.json",
+      "der_record_id": "der-00266",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-10-ver.json",
+      "ver_record_id": "ver-00266",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-11",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-11-der.json",
+      "der_record_id": "der-00267",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-11-ver.json",
+      "ver_record_id": "ver-00267",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-12",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-12-der.json",
+      "der_record_id": "der-00268",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-12-ver.json",
+      "ver_record_id": "ver-00268",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-13",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-13-der.json",
+      "der_record_id": "der-00269",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-13-ver.json",
+      "ver_record_id": "ver-00269",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-14",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-14-der.json",
+      "der_record_id": "der-00270",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-14-ver.json",
+      "ver_record_id": "ver-00270",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-15",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-15-der.json",
+      "der_record_id": "der-00271",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-15-ver.json",
+      "ver_record_id": "ver-00271",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "disputed_completion-16",
+      "family": "disputed_completion",
+      "der_file": "scenarios/disputed_completion-16-der.json",
+      "der_record_id": "der-00272",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/disputed_completion-16-ver.json",
+      "ver_record_id": "ver-00272",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "correction_after_verification-01",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-01-der.json",
+      "der_record_id": "der-00273",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-01-ver.json",
+      "ver_record_id": "ver-00273",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-02",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-02-der.json",
+      "der_record_id": "der-00274",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-02-ver.json",
+      "ver_record_id": "ver-00274",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-03",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-03-der.json",
+      "der_record_id": "der-00275",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-03-ver.json",
+      "ver_record_id": "ver-00275",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-04",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-04-der.json",
+      "der_record_id": "der-00276",
+      "execution_status": "FAILED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-04-ver.json",
+      "ver_record_id": "ver-00276",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-05",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-05-der.json",
+      "der_record_id": "der-00277",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-05-ver.json",
+      "ver_record_id": "ver-00277",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-06",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-06-der.json",
+      "der_record_id": "der-00278",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-06-ver.json",
+      "ver_record_id": "ver-00278",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-07",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-07-der.json",
+      "der_record_id": "der-00279",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-07-ver.json",
+      "ver_record_id": "ver-00279",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-08",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-08-der.json",
+      "der_record_id": "der-00280",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-08-ver.json",
+      "ver_record_id": "ver-00280",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-09",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-09-der.json",
+      "der_record_id": "der-00281",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-09-ver.json",
+      "ver_record_id": "ver-00281",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-10",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-10-der.json",
+      "der_record_id": "der-00282",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-10-ver.json",
+      "ver_record_id": "ver-00282",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-11",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-11-der.json",
+      "der_record_id": "der-00283",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-11-ver.json",
+      "ver_record_id": "ver-00283",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-12",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-12-der.json",
+      "der_record_id": "der-00284",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-12-ver.json",
+      "ver_record_id": "ver-00284",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-13",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-13-der.json",
+      "der_record_id": "der-00285",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-13-ver.json",
+      "ver_record_id": "ver-00285",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-14",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-14-der.json",
+      "der_record_id": "der-00286",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-14-ver.json",
+      "ver_record_id": "ver-00286",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-15",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-15-der.json",
+      "der_record_id": "der-00287",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-15-ver.json",
+      "ver_record_id": "ver-00287",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "correction_after_verification-16",
+      "family": "correction_after_verification",
+      "der_file": "scenarios/correction_after_verification-16-der.json",
+      "der_record_id": "der-00288",
+      "execution_status": "PARTIAL",
+      "has_ver": true,
+      "ver_file": "scenarios/correction_after_verification-16-ver.json",
+      "ver_record_id": "ver-00288",
+      "verification_status": "CORRECTED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-01",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-01-der.json",
+      "der_record_id": "der-00289",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/multi_system_deletion-01-ver.json",
+      "ver_record_id": "ver-00289",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-02",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-02-der.json",
+      "der_record_id": "der-00290",
+      "execution_status": "COMPLETE",
+      "has_ver": true,
+      "ver_file": "scenarios/multi_system_deletion-02-ver.json",
+      "ver_record_id": "ver-00290",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-03",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-03-der.json",
+      "der_record_id": "der-00291",
+      "execution_status": "PENDING",
+      "has_ver": true,
+      "ver_file": "scenarios/multi_system_deletion-03-ver.json",
+      "ver_record_id": "ver-00291",
+      "verification_status": "UNVERIFIED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-04",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-04-der.json",
+      "der_record_id": "der-00292",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-05",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-05-der.json",
+      "der_record_id": "der-00293",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-06",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-06-der.json",
+      "der_record_id": "der-00294",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/multi_system_deletion-06-ver.json",
+      "ver_record_id": "ver-00294",
+      "verification_status": "EXCEPTION_IDENTIFIED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-07",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-07-der.json",
+      "der_record_id": "der-00295",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-08",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-08-der.json",
+      "der_record_id": "der-00296",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-09",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-09-der.json",
+      "der_record_id": "der-00297",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-10",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-10-der.json",
+      "der_record_id": "der-00298",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-11",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-11-der.json",
+      "der_record_id": "der-00299",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-12",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-12-der.json",
+      "der_record_id": "der-00300",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-13",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-13-der.json",
+      "der_record_id": "der-00301",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/multi_system_deletion-13-ver.json",
+      "ver_record_id": "ver-00301",
+      "verification_status": "RESIDUAL_COPY_IDENTIFIED"
+    },
+    {
+      "scenario_id": "multi_system_deletion-14",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-14-der.json",
+      "der_record_id": "der-00302",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-15",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-15-der.json",
+      "der_record_id": "der-00303",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "multi_system_deletion-16",
+      "family": "multi_system_deletion",
+      "der_file": "scenarios/multi_system_deletion-16-der.json",
+      "der_record_id": "der-00304",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-01",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-01-der.json",
+      "der_record_id": "der-00305",
+      "execution_status": "PENDING_SUBPROCESSOR",
+      "has_ver": true,
+      "ver_file": "scenarios/vendor_exit-01-ver.json",
+      "ver_record_id": "ver-00305",
+      "verification_status": "CONFIRMED"
+    },
+    {
+      "scenario_id": "vendor_exit-02",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-02-der.json",
+      "der_record_id": "der-00306",
+      "execution_status": "UNVERIFIED",
+      "has_ver": true,
+      "ver_file": "scenarios/vendor_exit-02-ver.json",
+      "ver_record_id": "ver-00306",
+      "verification_status": "PARTIALLY_CONFIRMED"
+    },
+    {
+      "scenario_id": "vendor_exit-03",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-03-der.json",
+      "der_record_id": "der-00307",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/vendor_exit-03-ver.json",
+      "ver_record_id": "ver-00307",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "vendor_exit-04",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-04-der.json",
+      "der_record_id": "der-00308",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-05",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-05-der.json",
+      "der_record_id": "der-00309",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-06",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-06-der.json",
+      "der_record_id": "der-00310",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-07",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-07-der.json",
+      "der_record_id": "der-00311",
+      "execution_status": "EXCEPTION",
+      "has_ver": true,
+      "ver_file": "scenarios/vendor_exit-07-ver.json",
+      "ver_record_id": "ver-00311",
+      "verification_status": "SUBPROCESSOR_PENDING"
+    },
+    {
+      "scenario_id": "vendor_exit-08",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-08-der.json",
+      "der_record_id": "der-00312",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-09",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-09-der.json",
+      "der_record_id": "der-00313",
+      "execution_status": "FAILED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-10",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-10-der.json",
+      "der_record_id": "der-00314",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-11",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-11-der.json",
+      "der_record_id": "der-00315",
+      "execution_status": "PENDING",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-12",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-12-der.json",
+      "der_record_id": "der-00316",
+      "execution_status": "COMPLETE",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-13",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-13-der.json",
+      "der_record_id": "der-00317",
+      "execution_status": "PARTIAL",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-14",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-14-der.json",
+      "der_record_id": "der-00318",
+      "execution_status": "UNVERIFIED",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-15",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-15-der.json",
+      "der_record_id": "der-00319",
+      "execution_status": "EXCEPTION",
+      "has_ver": false
+    },
+    {
+      "scenario_id": "vendor_exit-16",
+      "family": "vendor_exit",
+      "der_file": "scenarios/vendor_exit-16-der.json",
+      "der_record_id": "der-00320",
+      "execution_status": "PENDING",
+      "has_ver": false
+    }
+  ],
+  "invalid": [
+    {
+      "id": "inv-missing-required-field",
+      "file": "invalid/inv-missing-required-field.json",
+      "record_type": "DER",
+      "reason": "evidence_metadata.source_system_id is missing (required field)."
+    },
+    {
+      "id": "inv-unknown-field",
+      "file": "invalid/inv-unknown-field.json",
+      "record_type": "DER",
+      "reason": "Top-level unknown field \"internal_notes\" present; additionalProperties is false."
+    },
+    {
+      "id": "inv-bad-enum-execution-status",
+      "file": "invalid/inv-bad-enum-execution-status.json",
+      "record_type": "DER",
+      "reason": "execution.execution_status is \"DONE\", not a value in the closed vocabulary."
+    },
+    {
+      "id": "inv-bad-record-type",
+      "file": "invalid/inv-bad-record-type.json",
+      "record_type": "DER",
+      "reason": "record_type is \"der\" (lowercase) instead of the required constant \"DER\"."
+    },
+    {
+      "id": "inv-malformed-hash",
+      "file": "invalid/inv-malformed-hash.json",
+      "record_type": "DER",
+      "reason": "evidence_metadata.record_hash is not a 64-char lowercase hex string."
+    },
+    {
+      "id": "inv-bad-timestamp",
+      "file": "invalid/inv-bad-timestamp.json",
+      "record_type": "DER",
+      "reason": "timestamp is not RFC 3339 (missing time component)."
+    },
+    {
+      "id": "inv-wrong-schema-version",
+      "file": "invalid/inv-wrong-schema-version.json",
+      "record_type": "DER",
+      "reason": "schema_version is \"0.2.0\", which does not match the required constant \"0.1.0\"."
+    },
+    {
+      "id": "inv-empty-systems-in-scope",
+      "file": "invalid/inv-empty-systems-in-scope.json",
+      "record_type": "DER",
+      "reason": "data_scope.systems_in_scope is an empty array; minItems is 1."
+    },
+    {
+      "id": "inv-duplicate-systems",
+      "file": "invalid/inv-duplicate-systems.json",
+      "record_type": "DER",
+      "reason": "data_scope.systems_in_scope contains a duplicate entry; uniqueItems is true."
+    },
+    {
+      "id": "inv-missing-request-context-object",
+      "file": "invalid/inv-missing-request-context-object.json",
+      "record_type": "DER",
+      "reason": "request_context is entirely missing (required top-level object)."
+    },
+    {
+      "id": "inv-ver-tampered-parent-link",
+      "file": "invalid/inv-ver-tampered-parent-link.json",
+      "record_type": "VER",
+      "reason": "VER linked_record_hash does not match its parent DER's actual hash (simulated tamper)."
+    },
+    {
+      "id": "inv-ver-bad-verification-status",
+      "file": "invalid/inv-ver-bad-verification-status.json",
+      "record_type": "VER",
+      "reason": "VER verification_status is \"DONE\", not a value in the closed vocabulary."
+    }
+  ],
+  "total_scenarios": 320,
+  "total_der": 320,
+  "total_ver": 183,
+  "total_invalid_examples": 12,
+  "note": "All records are entirely synthetic. No real customer data, personal data, or Michvi confidential material is present in this dataset."
+}

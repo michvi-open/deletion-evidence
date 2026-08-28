@@ -1,0 +1,46 @@
+{
+  "record_id": "der-00133",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T18:15:32Z",
+  "request_context": {
+    "request_id": "req-00133",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-06-14T22:03:48Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-261aef5"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-29023c6",
+    "scope_description": "Legal hold scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-billing-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "LEGAL_HOLD",
+    "executed_at": "2026-08-21T00:55:30Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-billing-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-billing-01",
+    "responsible_party_reference": "party-ref-46dcb90",
+    "recorded_at": "2026-08-26T18:15:32Z",
+    "evidence_references": [
+      "ticket-000133"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "bab5f6c46efebf405cdeb1d50ff4ff0a82dccdef2e5495e3f9643c2e3cda9ff7"
+  }
+}

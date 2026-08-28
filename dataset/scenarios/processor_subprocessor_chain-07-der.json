@@ -1,0 +1,53 @@
+{
+  "record_id": "der-00103",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T12:01:46Z",
+  "request_context": {
+    "request_id": "req-00103",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-08-01T10:10:21Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-690837"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-af5694",
+    "scope_description": "Processor/subprocessor chain scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02",
+      "saas-app-billing-01",
+      "crm-system-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-email-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-12T17:24:56Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02",
+      "saas-app-billing-01",
+      "crm-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-479b856",
+    "recorded_at": "2026-08-25T12:01:46Z",
+    "evidence_references": [
+      "ticket-000103"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "50215065360fa46f2d4984ee1866f878b1df61d584259bcd5bdc407c5b1d5a3d"
+  }
+}

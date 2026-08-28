@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00135",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T22:22:28Z",
+  "request_context": {
+    "request_id": "req-00135",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-07-11T04:48:36Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-2e90d57"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-4dd774",
+    "scope_description": "Legal hold scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "LEGAL_HOLD",
+    "executed_at": "2026-08-12T18:15:02Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-01",
+    "responsible_party_reference": "party-ref-e05b6",
+    "recorded_at": "2026-08-26T22:22:28Z",
+    "evidence_references": [
+      "ticket-000135"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "8517cbb54db4e9413ae81837196b34053614abced38a1efa6bdd4f27e9d31bbd"
+  }
+}

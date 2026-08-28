@@ -1,0 +1,51 @@
+{
+  "record_id": "der-00242",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T20:40:15Z",
+  "request_context": {
+    "request_id": "req-00242",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-07-16T05:22:46Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-460d252"
+  },
+  "data_scope": {
+    "data_category": "usage_analytics_record",
+    "subject_ref": "subject-ref-49e5951",
+    "scope_description": "Residual backup scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "cloud-storage-archive-01",
+      "backup-system-offsite-02",
+      "backup-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-17T19:07:44Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "cloud-storage-archive-01"
+    ],
+    "systems_pending": [
+      "backup-system-offsite-02",
+      "backup-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "cloud-storage-archive-01",
+    "responsible_party_reference": "party-ref-47554a7",
+    "recorded_at": "2026-08-25T20:40:15Z",
+    "evidence_references": [
+      "ticket-000242"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "24755e0b8fa0b3404a42c6be8e002a4f8995f969b77cd2e54caa00663dba2f0b"
+  }
+}

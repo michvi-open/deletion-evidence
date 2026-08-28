@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00283",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T00:34:22Z",
+  "request_context": {
+    "request_id": "req-00283",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-01T06:56:55Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-512eab"
+  },
+  "data_scope": {
+    "data_category": "crm_contact_record",
+    "subject_ref": "subject-ref-863c0",
+    "scope_description": "Correction after verification scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02",
+      "saas-app-core-01",
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-19T07:03:14Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02",
+      "saas-app-core-01",
+      "crm-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-4322bb2",
+    "recorded_at": "2026-08-25T00:34:22Z",
+    "evidence_references": [
+      "ticket-000283"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "e2ba6d0adda97c25a72b3870c569bf26025e346843ba9bccb30f13deda8c1fdd"
+  }
+}

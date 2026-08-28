@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00201",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T13:11:37Z",
+  "request_context": {
+    "request_id": "req-00201",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-14T05:04:49Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-27a94f9"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-33e6de2",
+    "scope_description": "Incomplete deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-support-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-22T16:04:35Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-support-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-support-01",
+    "responsible_party_reference": "party-ref-4b87d9c",
+    "recorded_at": "2026-08-25T13:11:37Z",
+    "evidence_references": [
+      "ticket-000201"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "8b2e6255db1e848371a3c78c3512b9692afafb483de5515868a942bc71600cd4"
+  }
+}

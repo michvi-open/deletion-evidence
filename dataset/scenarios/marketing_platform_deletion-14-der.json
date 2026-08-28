@@ -1,0 +1,51 @@
+{
+  "record_id": "der-00094",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T13:28:52Z",
+  "request_context": {
+    "request_id": "req-00094",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-07-06T06:27:38Z",
+    "requesting_role": "data_subject",
+    "requesting_organization_ref": "org-ref-102cffe"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-4e3cd05",
+    "scope_description": "Marketing platform deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-01",
+      "marketing-platform-email-02"
+    ],
+    "processors_in_scope": [
+      "subprocessor-analytics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-08-17T11:23:46Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-01",
+      "marketing-platform-email-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-01",
+    "responsible_party_reference": "party-ref-512eab",
+    "recorded_at": "2026-08-26T13:28:52Z",
+    "evidence_references": [
+      "ticket-000094"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "da96bee6098e41f15cbab2c7e73982751a1f5b551ec75bcaf796cf663680350d"
+  }
+}

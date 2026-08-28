@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00225",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T05:38:49Z",
+  "request_context": {
+    "request_id": "req-00225",
+    "request_type": "ADMINISTRATIVE_DELETION",
+    "requested_at": "2026-06-10T21:28:08Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-2dd2091"
+  },
+  "data_scope": {
+    "data_category": "migrated_workload_data",
+    "subject_ref": "subject-ref-5f03f0a",
+    "scope_description": "Deletion exception scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-07T07:07:47Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-eu-02"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-5e02064",
+    "recorded_at": "2026-08-26T05:38:49Z",
+    "evidence_references": [
+      "ticket-000225"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "cd4c5d6af8635ed7f4ececc3ac4a1e10f78c0389ff60fbbeef22be6dfe337270"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00264",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T16:53:10Z",
+  "request_context": {
+    "request_id": "req-00264",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-28T04:14:03Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-43bff88"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-39c95cb",
+    "scope_description": "Disputed completion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-01",
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-13T05:51:09Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-01"
+    ],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-01",
+    "responsible_party_reference": "party-ref-406dc49",
+    "recorded_at": "2026-08-26T16:53:10Z",
+    "evidence_references": [
+      "ticket-000264"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "8179e90ff4de8cd365333f4c00bd708ce57f4f63b04c7ada43641877470b43a8"
+  }
+}

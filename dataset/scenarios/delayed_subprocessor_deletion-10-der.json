@@ -1,0 +1,55 @@
+{
+  "record_id": "der-00218",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T00:33:12Z",
+  "request_context": {
+    "request_id": "req-00218",
+    "request_type": "VENDOR_EXIT",
+    "requested_at": "2026-08-06T17:21:16Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-3fe46ba"
+  },
+  "data_scope": {
+    "data_category": "vendor_contract_record",
+    "subject_ref": "subject-ref-1ec8829",
+    "scope_description": "Delayed subprocessor deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-support-01",
+      "saas-app-core-01",
+      "saas-app-billing-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-hosting-01",
+      "subprocessor-analytics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING_SUBPROCESSOR",
+    "executed_at": "2026-08-23T20:07:46Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-support-01"
+    ],
+    "systems_pending": [
+      "saas-app-core-01",
+      "saas-app-billing-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmation outstanding"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-support-01",
+    "responsible_party_reference": "party-ref-34db1df",
+    "recorded_at": "2026-08-26T00:33:12Z",
+    "evidence_references": [
+      "ticket-000218"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "520ea08a51b670e1c99ff268dc57e632634a0b52989a82af5ca2b8484397a340"
+  }
+}

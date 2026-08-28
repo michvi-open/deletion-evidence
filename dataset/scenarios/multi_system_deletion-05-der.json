@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00293",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T10:27:50Z",
+  "request_context": {
+    "request_id": "req-00293",
+    "request_type": "CUSTOMER_OFFBOARDING",
+    "requested_at": "2026-07-19T23:45:55Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-2f60695"
+  },
+  "data_scope": {
+    "data_category": "crm_contact_record",
+    "subject_ref": "subject-ref-a8a826",
+    "scope_description": "Multi-system deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-support-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-hosting-01",
+      "subprocessor-email-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-18T07:14:59Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-support-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-support-01",
+    "responsible_party_reference": "party-ref-34f170",
+    "recorded_at": "2026-08-25T10:27:50Z",
+    "evidence_references": [
+      "ticket-000293"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f8e288f88ba8e027149dbf5d21ccbe39a276746e464472aa47e93c6ac56c3ca3"
+  }
+}

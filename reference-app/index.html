@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Deletion Evidence Record — Reference App (v0.1)</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="top">
+  <h1>Deletion Evidence Record — Reference App</h1>
+  <p>v0.1 · runs entirely in your browser. Records are not transmitted or stored by Michvi.</p>
+</header>
+
+<div class="boundary-banner">
+  This project is an open-source public contribution and is separate from Michvi LLP's confidential advisory
+  engagements and internal methodologies. It records evidence of an asserted/executed deletion action —
+  it is <strong>not</strong> independent proof that data was physically deleted, and it is not legal advice
+  or a compliance determination.
+</div>
+
+<nav class="tabs" id="tabs">
+  <button data-tab="create-der" class="active">Create DER</button>
+  <button data-tab="create-ver">Create VER</button>
+  <button data-tab="validate">Validate Existing Record</button>
+  <button data-tab="chain">View Linked Evidence Chain</button>
+  <button data-tab="demo">Load Demo Scenario</button>
+</nav>
+
+<main>
+
+  <!-- ============================= CREATE DER ============================= -->
+  <section class="panel tab-panel" id="tab-create-der">
+    <h2>Create Deletion Evidence Record</h2>
+    <p class="hint">Fill the form, then Generate. This computes the record's integrity hash client-side — nothing leaves your browser.</p>
+
+    <div class="grid">
+      <div>
+        <label>Request ID</label>
+        <input type="text" id="der_request_id" placeholder="e.g. request-reference" />
+        <label>Request type</label>
+        <select id="der_request_type"></select>
+        <label>Requested at</label>
+        <input type="datetime-local" id="der_requested_at" />
+        <label>Requesting role</label>
+        <input type="text" id="der_requesting_role" placeholder="e.g. requesting-role" />
+      </div>
+      <div>
+        <label>Data category</label>
+        <input type="text" id="der_data_category" placeholder="e.g. data-category" />
+        <label>Subject reference (pseudonymous — not a real name/ID)</label>
+        <input type="text" id="der_subject_ref" placeholder="e.g. pseudonymous-subject-reference" />
+        <label>Scope description</label>
+        <textarea id="der_scope_description" placeholder="What this action covers"></textarea>
+        <label>Systems in scope (comma-separated)</label>
+        <input type="text" id="der_systems_in_scope" placeholder="e.g. system-a, system-b" />
+        <label>Processors in scope (comma-separated, optional)</label>
+        <input type="text" id="der_processors_in_scope" placeholder="e.g. processor-reference" />
+      </div>
+    </div>
+
+    <fieldset>
+      <legend>Execution</legend>
+      <div class="grid">
+        <div>
+          <label>Execution status</label>
+          <select id="der_execution_status"></select>
+          <label>Executed at</label>
+          <input type="datetime-local" id="der_executed_at" />
+        </div>
+        <div>
+          <label>Execution method (declared)</label>
+          <textarea id="der_execution_method" placeholder="Declarative statement, not verifiable technical proof"></textarea>
+          <label>Systems completed (comma-separated)</label>
+          <input type="text" id="der_systems_completed" />
+          <label>Systems pending (comma-separated)</label>
+          <input type="text" id="der_systems_pending" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Residual state</legend>
+      <div class="grid">
+        <div>
+          <label>Backup state</label>
+          <input type="text" id="der_backup_state" />
+          <label><input type="checkbox" id="der_residual_copies" /> Residual copies declared</label>
+          <label><input type="checkbox" id="der_legal_hold" /> Legal hold applies</label>
+        </div>
+        <div>
+          <label>Retention exception (optional)</label>
+          <input type="text" id="der_retention_exception" />
+          <label>Subprocessor status (optional)</label>
+          <input type="text" id="der_subprocessor_status" />
+        </div>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Evidence metadata</legend>
+      <div class="grid">
+        <div>
+          <label>Source system ID</label>
+          <input type="text" id="der_source_system_id" />
+          <label>Responsible party reference (not a personal name)</label>
+          <input type="text" id="der_responsible_party" />
+        </div>
+        <div>
+          <label>Evidence references (comma-separated, optional)</label>
+          <input type="text" id="der_evidence_references" placeholder="e.g. evidence-reference" />
+        </div>
+      </div>
+    </fieldset>
+
+    <button class="action" id="btn-generate-der">Generate DER</button>
+    <button class="action secondary" id="btn-load-example-der">Load synthetic example</button>
+    <p class="hint">Synthetic example only. No real person, account, system, or production data is used.</p>
+
+    <div id="der-result"></div>
+  </section>
+
+  <!-- ============================= CREATE VER ============================= -->
+  <section class="panel tab-panel" id="tab-create-ver" style="display:none">
+    <h2>Create Verification / Exception Record</h2>
+    <p class="hint">Links to a previously generated DER by ID and by its exact hash. Generate a DER first, or paste one below.</p>
+
+    <div class="grid">
+      <div>
+        <label>Linked DER record ID</label>
+        <input type="text" id="ver_linked_id" />
+        <label>Linked DER hash (pinned)</label>
+        <input type="text" id="ver_linked_hash" />
+        <button class="action secondary" id="btn-use-last-der">Use last generated DER</button>
+      </div>
+      <div>
+        <label>Verification type</label>
+        <input type="text" id="ver_type" placeholder="e.g. periodic_review, subprocessor_confirmation" />
+        <label>Verification status</label>
+        <select id="ver_status"></select>
+      </div>
+    </div>
+
+    <div class="grid">
+      <div>
+        <label>Residual state update (optional)</label>
+        <textarea id="ver_residual_update"></textarea>
+        <label>Subprocessor update (optional)</label>
+        <textarea id="ver_subprocessor_update"></textarea>
+      </div>
+      <div>
+        <label>Exception reason (optional)</label>
+        <textarea id="ver_exception_reason"></textarea>
+        <label>Review note (optional)</label>
+        <textarea id="ver_review_note"></textarea>
+      </div>
+    </div>
+
+    <label>Recorded by reference (not a personal name)</label>
+    <input type="text" id="ver_recorded_by" />
+
+    <button class="action" id="btn-generate-ver">Generate VER</button>
+    <div id="ver-result"></div>
+  </section>
+
+  <!-- ============================= VALIDATE ============================= -->
+  <section class="panel tab-panel" id="tab-validate" style="display:none">
+    <h2>Validate Existing Record</h2>
+    <p class="hint">Paste a DER or VER JSON record. record_type is auto-detected.</p>
+    <textarea id="validate_input" style="min-height:220px" placeholder="Paste JSON here"></textarea>
+    <br/>
+    <button class="action" id="btn-validate">Validate</button>
+    <div id="validate-result"></div>
+  </section>
+
+  <!-- ============================= CHAIN ============================= -->
+  <section class="panel tab-panel" id="tab-chain" style="display:none">
+    <h2>View Linked Evidence Chain</h2>
+    <p class="hint">Paste a parent DER and a child VER to verify the link (or load a demo scenario, which fills this in automatically).</p>
+    <div class="grid">
+      <div>
+        <label>Parent DER JSON</label>
+        <textarea id="chain_der" style="min-height:220px"></textarea>
+      </div>
+      <div>
+        <label>Child VER JSON</label>
+        <textarea id="chain_ver" style="min-height:220px"></textarea>
+      </div>
+    </div>
+    <button class="action" id="btn-verify-chain">Verify Chain</button>
+    <div id="chain-result"></div>
+  </section>
+
+  <!-- ============================= DEMO ============================= -->
+  <section class="panel tab-panel" id="tab-demo" style="display:none">
+    <h2>Load Demo Scenario</h2>
+    <p class="hint">A handful of synthetic scenarios from the project's dataset, embedded so no network request is needed.</p>
+    <label>Scenario</label>
+    <select id="demo_select"></select>
+    <button class="action" id="btn-load-demo">Load</button>
+    <button class="action secondary" id="btn-demo-to-chain">Send to Evidence Chain tab</button>
+    <div id="demo-result"></div>
+  </section>
+
+</main>
+
+<footer class="app-footer">
+  Deletion Evidence Record v0.1 — separate from Michvi LLP's confidential advisory engagements.
+  <a href="../spec/deletion-evidence-record.md">Specification</a> ·
+  <a href="../README.md">README</a>
+</footer>
+
+<script src="lib.js"></script>
+<script src="schemas.embedded.js"></script>
+<script src="demos.embedded.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

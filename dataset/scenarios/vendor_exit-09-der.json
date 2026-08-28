@@ -1,0 +1,52 @@
+{
+  "record_id": "der-00313",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T01:20:51Z",
+  "request_context": {
+    "request_id": "req-00313",
+    "request_type": "VENDOR_EXIT",
+    "requested_at": "2026-07-03T17:54:39Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-249d569"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-1e930f2",
+    "scope_description": "Vendor exit scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "cloud-storage-archive-01",
+      "cloud-storage-primary-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-payments-01",
+      "subprocessor-hosting-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "cloud-storage-archive-01",
+      "cloud-storage-primary-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "cloud-storage-archive-01",
+    "responsible_party_reference": "party-ref-4263eec",
+    "recorded_at": "2026-08-25T01:20:51Z",
+    "evidence_references": [
+      "ticket-000313"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "545a6800042d320b90172dcea69d2a770913167a33371968ef7affc49bfaf91b"
+  }
+}

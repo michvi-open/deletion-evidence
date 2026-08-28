@@ -1,0 +1,47 @@
+{
+  "record_id": "der-vector-0001",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-01-15T12:00:00Z",
+  "request_context": {
+    "request_id": "req-vector-0001",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-01-10T09:00:00Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-vector-01"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-vector-01",
+    "scope_description": "Fixed test vector — deterministic canonicalization/hash example.",
+    "systems_in_scope": [
+      "crm-system-01",
+      "saas-app-core-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "COMPLETE",
+    "executed_at": "2026-01-14T08:00:00Z",
+    "execution_method_declaration": "Deletion executed via standard offboarding workflow.",
+    "systems_completed": [
+      "crm-system-01",
+      "saas-app-core-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-01",
+    "responsible_party_reference": "party-ref-vector-01",
+    "recorded_at": "2026-01-15T12:00:00Z",
+    "evidence_references": [
+      "ticket-000001"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "6d5f52b68e15161f57966f4761e42ef55504e7dfffd8008118329afc1dc76a3f"
+  }
+}

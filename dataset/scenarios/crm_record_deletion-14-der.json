@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00046",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T16:49:10Z",
+  "request_context": {
+    "request_id": "req-00046",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-08-03T11:51:47Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-3db8ce"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-5760bb5",
+    "scope_description": "CRM record deletion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-eu-02",
+    "responsible_party_reference": "party-ref-3f7ca1b",
+    "recorded_at": "2026-08-25T16:49:10Z",
+    "evidence_references": [
+      "ticket-000046"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "085598e32ca1c4582fa3ee69850a535bb9223e457511ed01bcc7de9f6aca5e5f"
+  }
+}

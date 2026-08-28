@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00127",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T19:31:12Z",
+  "request_context": {
+    "request_id": "req-00127",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-07-07T06:32:57Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-cb93cf"
+  },
+  "data_scope": {
+    "data_category": "employee_hr_record",
+    "subject_ref": "subject-ref-36127bc",
+    "scope_description": "Backup retention scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "backup-system-offsite-02",
+      "backup-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-13T07:41:41Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "backup-system-offsite-02"
+    ],
+    "systems_pending": [
+      "backup-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "backup-system-offsite-02",
+    "responsible_party_reference": "party-ref-5a15b1e",
+    "recorded_at": "2026-08-25T19:31:12Z",
+    "evidence_references": [
+      "ticket-000127"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "cce4fe5658c64c2779c71acbcfeb00e60f78e96ed2ebdcc6fa488598b9c0d051"
+  }
+}

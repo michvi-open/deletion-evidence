@@ -1,0 +1,50 @@
+{
+  "record_id": "der-00227",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T17:09:29Z",
+  "request_context": {
+    "request_id": "req-00227",
+    "request_type": "ADMINISTRATIVE_DELETION",
+    "requested_at": "2026-05-28T12:28:47Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-3647ef3"
+  },
+  "data_scope": {
+    "data_category": "customer_account_data",
+    "subject_ref": "subject-ref-3adf2b8",
+    "scope_description": "Deletion exception scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-warehouse-01",
+      "analytics-platform-02",
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-10T13:41:30Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "analytics-warehouse-01"
+    ],
+    "systems_pending": [
+      "analytics-platform-02",
+      "crm-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": true
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-warehouse-01",
+    "responsible_party_reference": "party-ref-1805a8a",
+    "recorded_at": "2026-08-25T17:09:29Z",
+    "evidence_references": [
+      "ticket-000227"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "c749b5395c37bd5751f2e8d1d8e9966fa77efdad87567ccc8b2b0f66d3d5d594"
+  }
+}

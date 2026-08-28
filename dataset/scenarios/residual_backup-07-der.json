@@ -1,0 +1,46 @@
+{
+  "record_id": "der-00247",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T00:22:46Z",
+  "request_context": {
+    "request_id": "req-00247",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-07-02T23:37:49Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-2b84dc7"
+  },
+  "data_scope": {
+    "data_category": "support_ticket_record",
+    "subject_ref": "subject-ref-4ee7b84",
+    "scope_description": "Residual backup scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "backup-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PENDING_SUBPROCESSOR",
+    "executed_at": "2026-08-24T06:58:26Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "backup-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "included in standard 30-day backup rotation",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "backup-system-01",
+    "responsible_party_reference": "party-ref-571a806",
+    "recorded_at": "2026-08-26T00:22:46Z",
+    "evidence_references": [
+      "ticket-000247"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "de2101b40a647ffa7e166178725578678cfbc4ad2372a47387146fb03edcbe71"
+  }
+}

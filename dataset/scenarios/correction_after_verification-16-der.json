@@ -1,0 +1,45 @@
+{
+  "record_id": "der-00288",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T04:51:11Z",
+  "request_context": {
+    "request_id": "req-00288",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-06-13T18:03:45Z",
+    "requesting_role": "compliance_operations",
+    "requesting_organization_ref": "org-ref-49e8b20"
+  },
+  "data_scope": {
+    "data_category": "usage_analytics_record",
+    "subject_ref": "subject-ref-5885f3",
+    "scope_description": "Correction after verification scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "PARTIAL",
+    "executed_at": "2026-08-16T05:00:44Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "crm-system-01"
+    ],
+    "systems_pending": []
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "crm-system-01",
+    "responsible_party_reference": "party-ref-52e7f11",
+    "recorded_at": "2026-08-25T04:51:11Z",
+    "evidence_references": [
+      "ticket-000288"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "c1f0ac7c9296543e9a60a5c55494d3956472fdb46a341d3aef9d3859ea25fef1"
+  }
+}

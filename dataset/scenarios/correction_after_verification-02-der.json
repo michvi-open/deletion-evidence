@@ -1,0 +1,48 @@
+{
+  "record_id": "der-00274",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T12:58:27Z",
+  "request_context": {
+    "request_id": "req-00274",
+    "request_type": "ADMINISTRATIVE_DELETION",
+    "requested_at": "2026-06-06T21:47:04Z",
+    "requesting_role": "customer_admin",
+    "requesting_organization_ref": "org-ref-eaf672"
+  },
+  "data_scope": {
+    "data_category": "vendor_contract_record",
+    "subject_ref": "subject-ref-43cda31",
+    "scope_description": "Correction after verification scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-support-01",
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-22T17:39:50Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "saas-app-support-01"
+    ],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": false,
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-support-01",
+    "responsible_party_reference": "party-ref-9a207",
+    "recorded_at": "2026-08-25T12:58:27Z",
+    "evidence_references": [
+      "ticket-000274"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "da2449f1fe29f6b7ef502271dbe38315bc0d8405714f094dd42cf62865dc23c6"
+  }
+}

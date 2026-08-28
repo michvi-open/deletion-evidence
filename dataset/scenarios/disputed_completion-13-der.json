@@ -1,0 +1,49 @@
+{
+  "record_id": "der-00269",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-26T22:20:42Z",
+  "request_context": {
+    "request_id": "req-00269",
+    "request_type": "DATA_SUBJECT_REQUEST",
+    "requested_at": "2026-07-05T03:29:59Z",
+    "requesting_role": "hr_operations",
+    "requesting_organization_ref": "org-ref-2937afd"
+  },
+  "data_scope": {
+    "data_category": "marketing_contact_record",
+    "subject_ref": "subject-ref-3ecb7fe",
+    "scope_description": "Disputed completion scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "marketing-platform-01",
+      "crm-system-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "UNVERIFIED",
+    "executed_at": "2026-08-07T10:36:49Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "marketing-platform-01"
+    ],
+    "systems_pending": [
+      "crm-system-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "marketing-platform-01",
+    "responsible_party_reference": "party-ref-5032fa8",
+    "recorded_at": "2026-08-26T22:20:42Z",
+    "evidence_references": [
+      "ticket-000269"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "aef04eda10557f3908ea5e4784ae93ed1e8f16eb483eccdafbe1519dc6e03f1b"
+  }
+}

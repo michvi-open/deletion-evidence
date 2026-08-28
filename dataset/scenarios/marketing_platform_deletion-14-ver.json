@@ -1,0 +1,19 @@
+{
+  "record_id": "ver-00094",
+  "record_type": "VER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-21T17:01:51Z",
+  "linked_record_id": "der-00094",
+  "linked_record_hash": "da96bee6098e41f15cbab2c7e73982751a1f5b551ec75bcaf796cf663680350d",
+  "verification_type": "periodic_review",
+  "verification_status": "PARTIALLY_CONFIRMED",
+  "evidence_metadata": {
+    "recorded_by_reference": "reviewer-ref-5956e58",
+    "recorded_at": "2026-08-21T10:32:26Z",
+    "evidence_references": [
+      "review-000094"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "5e5a714e6a2e563cc7cbb369c5f75f1a51a3ecbb468c21f745a266e956025f91"
+  }
+}

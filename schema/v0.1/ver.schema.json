@@ -1,0 +1,104 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/ver.schema.json",
+  "title": "Verification / Exception Record (VER)",
+  "description": "Links to a previously issued Deletion Evidence Record (DER) and records later verification, residual-state discovery, exception, legal hold update, subprocessor completion, correction, or review. See /spec/deletion-evidence-record.md for the normative specification.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "record_id",
+    "record_type",
+    "schema_version",
+    "timestamp",
+    "linked_record_id",
+    "linked_record_hash",
+    "verification_type",
+    "verification_status",
+    "evidence_metadata"
+  ],
+  "properties": {
+    "record_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128
+    },
+    "record_type": {
+      "const": "VER",
+      "description": "Fixed discriminator identifying this as a Verification / Exception Record."
+    },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "linked_record_id": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 128,
+      "description": "record_id of the parent DER this VER refers to."
+    },
+    "linked_record_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$",
+      "description": "The exact record_hash of the parent DER at the time this VER was created. Used to pin the linkage and detect tampering with the parent record."
+    },
+    "verification_type": {
+      "type": "string",
+      "maxLength": 128,
+      "description": "Free-text descriptor of what kind of verification/exception activity this record represents (e.g. 'periodic_review', 'subprocessor_confirmation', 'audit_spot_check', 'data_subject_follow_up')."
+    },
+    "verification_status": {
+      "$ref": "https://michvi.com/open-source/deletion-evidence/schema/v0.1/vocab.schema.json#/$defs/verification_status"
+    },
+    "residual_state_update": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Updated declarative statement of residual state, if changed since the parent DER."
+    },
+    "subprocessor_update": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Updated declarative statement of subprocessor completion, if changed since the parent DER."
+    },
+    "exception_reason": {
+      "type": "string",
+      "maxLength": 500,
+      "description": "Required in substance (though not schema-enforced free text) whenever verification_status is EXCEPTION_IDENTIFIED or RESIDUAL_COPY_IDENTIFIED. Describes the nature of the exception."
+    },
+    "review_note": {
+      "type": "string",
+      "maxLength": 1000,
+      "description": "Human-readable note from the reviewer/verifier."
+    },
+    "evidence_metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["recorded_at", "canonicalization_method", "record_hash"],
+      "properties": {
+        "recorded_by_reference": {
+          "type": "string",
+          "maxLength": 128,
+          "description": "Opaque reference to the party recording this verification. Not a personal name."
+        },
+        "recorded_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "evidence_references": {
+          "type": "array",
+          "items": { "type": "string", "maxLength": 256 }
+        },
+        "canonicalization_method": {
+          "const": "der-ver-canonical-json-v0.1"
+        },
+        "record_hash": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$",
+          "description": "SHA-256 hash (lowercase hex) of this record's own canonicalized content, this field excluded."
+        }
+      }
+    }
+  }
+}

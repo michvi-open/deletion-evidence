@@ -1,0 +1,54 @@
+{
+  "record_id": "der-00173",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T14:55:31Z",
+  "request_context": {
+    "request_id": "req-00173",
+    "request_type": "CONTRACT_TERMINATION",
+    "requested_at": "2026-05-30T03:55:23Z",
+    "requesting_role": "account_owner",
+    "requesting_organization_ref": "org-ref-1094c9d"
+  },
+  "data_scope": {
+    "data_category": "usage_analytics_record",
+    "subject_ref": "subject-ref-511355e",
+    "scope_description": "Contract termination scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "saas-app-core-01",
+      "saas-app-support-01",
+      "saas-app-billing-01"
+    ],
+    "processors_in_scope": [
+      "subprocessor-logistics-01"
+    ]
+  },
+  "execution": {
+    "execution_status": "FAILED",
+    "executed_at": null,
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [],
+    "systems_pending": [
+      "saas-app-core-01",
+      "saas-app-support-01",
+      "saas-app-billing-01"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "excluded from backup — primary system only",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false,
+    "subprocessor_status": "subprocessor deletion confirmed"
+  },
+  "evidence_metadata": {
+    "source_system_id": "saas-app-core-01",
+    "responsible_party_reference": "party-ref-64a488",
+    "recorded_at": "2026-08-25T14:55:31Z",
+    "evidence_references": [
+      "ticket-000173"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "f08f3e1569322fe11a6ad5a7dbec1c6b037f55e2eb8024c5b7ad5b93e4cdca4e"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "record_id": "der-00228",
+  "record_type": "DER",
+  "schema_version": "0.1.0",
+  "timestamp": "2026-08-25T13:19:35Z",
+  "request_context": {
+    "request_id": "req-00228",
+    "request_type": "ACCOUNT_CLOSURE",
+    "requested_at": "2026-06-11T20:53:34Z",
+    "requesting_role": "procurement",
+    "requesting_organization_ref": "org-ref-ad3da4"
+  },
+  "data_scope": {
+    "data_category": "usage_analytics_record",
+    "subject_ref": "subject-ref-28ccc8f",
+    "scope_description": "Deletion exception scenario — synthetic record for dataset testing purposes only.",
+    "systems_in_scope": [
+      "analytics-warehouse-01",
+      "crm-system-eu-02"
+    ]
+  },
+  "execution": {
+    "execution_status": "EXCEPTION",
+    "executed_at": "2026-08-10T11:25:09Z",
+    "execution_method_declaration": "Deletion/data-exit executed via standard operational workflow declaration (synthetic).",
+    "systems_completed": [
+      "analytics-warehouse-01"
+    ],
+    "systems_pending": [
+      "crm-system-eu-02"
+    ]
+  },
+  "residual_state": {
+    "backup_state": "backup purge pending next rotation cycle",
+    "residual_copies_declared": true,
+    "retention_exception": "Residual copy identified in secondary storage tier (synthetic).",
+    "legal_hold": false
+  },
+  "evidence_metadata": {
+    "source_system_id": "analytics-warehouse-01",
+    "responsible_party_reference": "party-ref-546589d",
+    "recorded_at": "2026-08-25T13:19:35Z",
+    "evidence_references": [
+      "ticket-000228"
+    ],
+    "canonicalization_method": "der-ver-canonical-json-v0.1",
+    "record_hash": "488f4fa948254e72ea39364843d0b8ae57021014c40a5a94cb649cc16bde87bd"
+  }
+}
